@@ -1,0 +1,45 @@
+<include file="Common/header" />
+<div class="rightfix">
+  <a class="home1"></a><a class="home_pass">森迪产业</a><a href="/index.php/Adminen/Link/add" class="home_right">添加分公司</a>
+  <div class="clear"></div>
+  <div class="article_list">
+ 
+    <div class="clear"></div>
+    <div class="table_title">
+      <form action="" method="post">  
+      <div class="wz_title">
+        <div class="wz_table4">名称</div>
+     
+      
+        <div class="wz_table3">操作</div>
+      </div>
+    </div>
+    <div class="clear"></div>
+    <foreach name="result" item="val">
+      <div class="table_list">
+        <div class="wz_list">
+          <div class="wz_table4">{$val.w_name}</div>
+ 
+          <div class="wz_table3">
+          	<a class="aa1" href="{:U('/index.php/Adminen/Link/words_editor',array('id'=>$val['w_id']))}">修改</a>||
+          	<a class="aa1" href="{:U('/index.php/Adminen/Link/words_del',array('id'=>$val['w_id']))}">删除</a></div>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </foreach>
+    <div class="pagelist">
+      <input type="submit" value="删除所选" class="delete">
+    </div>
+    </form>
+  </div>
+</div>
+<!-- 权限判断 -->
+<input type="hidden" name="power" value="{$current_admin.admin_power}">
+<div class="clear"></div>
+<script type="text/javascript">
+
+</script>
+<div class="bottom">声明：系统开发版权归重庆艾斯顿文化传媒有限公司所有，翻版必究</div>
+<include file="Common/alert" />
+</body>
+</html>

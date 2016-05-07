@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="页面描述"/>
+		<meta name="keywords" content="关键字,关键字"/>
+		<meta name="robots" content="index,follow"/>
+		<meta name="renderer" content="webkit">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="__CSS__filiale.global.css"/>
+		<link rel="stylesheet" type="text/css" href="__CSS__filiale3.global.css"/>
+		<link rel="stylesheet" type="text/css" href="__CSS__news.detail.css"/>
+	</head>
+	<body>
+		<include file="Common/header"/>
+		<div class="center-block">
+			<div class="location">当前位置：<a href="/index.php/Home3/Index/index"><span style="font-weight: bold;color: #000000;">返回首页</span></a>&nbsp;&gt;&gt;&nbsp;<span>公司动态</span>&nbsp;&gt;&gt;&nbsp;<span>{$catename}</span></div>
+			<div class="main_section cl">
+				<div class="left fl">
+					<ul class="menu">
+						<li class="tit">导航</li>
+						<!--<li class="li"><a href="">综合新闻</a></li>-->
+						<foreach name="cate" item='vo'>
+						<li class="li"><a href="/index.php/Home3/News/index/id/{$vo['cate_id']}">{$vo['cate_name']}</a></li>
+						</foreach>
+					</ul>
+				</div>
+				<div class="right fr">
+					<div class="tit cl">
+						<span class="fl">公司动态</span>
+						<a href="" class="fr">MORE&gt;&gt;</a>
+					</div>
+					<div class="detail">
+						<p class="detail_title">{$result['art_title']}</p>
+						<p class="other">作者：{$result['art_author']}    日期：{$result['art_addtime']|date='Y-m-d',###}</p>
+						<!--<p class="p"></p>-->
+						<br />
+						<div class="pics cl">
+							<img class="fl" style="margin-left: 200px;width: 300px;display: <?php if($result['art_thumb']){echo 'block';}else{echo 'none';} ?>;" src="{$result['art_thumb']}" />
+							
+						</div>
+						<p class="p">
+							<?php $str  =stripslashes($result['art_content']);
+							       echo htmlspecialchars_decode($str); ?>
+						</p>
+						
+						<br />
+					</div>
+					<a href="/index.php/Home3/News/details/id/{$result1['art_id']}" class="prev">上一篇：<?php if($result1['art_title']){echo $result1['art_title'];}else{echo "没有了";} ?>...</a>
+					<a href="/index.php/Home3/News/details/id/{$result2['art_id']}" class="next">下一篇：<?php if($result2['art_title']){echo $result2['art_title'];}else{echo "没有了";} ?></a>
+				</div>
+			</div>
+		</div>
+		<include file="Common/foot"/>
+	</body>
+</html>
+<script type="text/javascript" src="__JS__jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="__JS__js.js"></script>

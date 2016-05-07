@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+.main_section .right h4{
+	font-family: "微软雅黑";
+	text-align: center;
+	padding: 20px 0;
+	margin: 20px 0 0;
+	font-weight: normal;
+	border-top: 1px solid #eee;
+}
+.main_section .right textarea{
+	width: 98%;
+	height: 195px;
+	display: block;
+	padding: 5px 1%;
+	font-family: "微软雅黑";
+	font-size: 12px;
+	color: #999;
+	border: 1px solid #19af89;
+}
+.main_section .right input[type=submit]{
+	width: 200px;
+	height: 38px;
+	display: block;
+	color: #fff;
+	font-family: "微软雅黑";
+	font-size: 16px;
+	color: #fff;
+	margin: 20px auto 0;
+	background-color: #19af89;
+}

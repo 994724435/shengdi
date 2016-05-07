@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+.main_section .right .detail{
+	padding: 5px 0;
+	margin-top: 30px;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+}
+.main_section .right .detail .detail_title{
+	text-align: center;
+	font-family: "微软雅黑";
+	color: #1b1b1b;
+	padding: 5px 0;
+}
+.main_section .right .detail .other{
+	text-align: center;
+	font-size: 12px;
+	color: #999;
+	margin-bottom: 10px;
+}
+.main_section .right .detail .p{
+	font-size: 12px;
+	color: #535353;
+	text-indent: 24px;
+	line-height: 22px;
+}
+.main_section .right .detail .pics{
+	margin: 15px 0;
+}
+.main_section .right .detail .pics img{
+	margin: 0 3px;
+}
+.main_section .right > a{
+	display: block;
+	font-size: 12px;
+	color: #656565;
+	margin: 10px 0;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.main_section .right > a:hover{
+	color: #0068b7;
+}

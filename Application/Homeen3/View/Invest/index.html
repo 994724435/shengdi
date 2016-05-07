@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="页面描述"/>
+		<meta name="keywords" content="关键字,关键字"/>
+		<meta name="robots" content="index,follow"/>
+		<meta name="renderer" content="webkit">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="__CSS__global.css"/>
+		<link rel="stylesheet" type="text/css" href="__CSS__walk.into.css"/>
+	</head>
+	<body>
+		<include file="Common/header"/>
+		<div class="center-block">
+			<div class="location">当前位置：<a href="/index.php/Homeen3/Index">首页</a>&nbsp;&gt;&gt;&nbsp;<span>新闻中心</span></div>
+			<div class="main_section cl">
+				<div class="left fl">
+					<ul class="menu">
+						<li class="tit">导航</li>
+						<li class="li"><a href="/index.php/Homeen3/Invest/index/de/投资项目">投资项目</a></li>
+						<li class="li"><a href="/index.php/Homeen3/Invest/index/de/优惠政策">优惠政策</a></li>
+						<li class="li"><a href="/index.php/Homeen3/Invest/detail/id/2">投资优势</a></li>
+						<li class="li"><a href="/index.php/Homeen3/Invest/detail/id/1">服务流程</a></li>
+						<li class="li"><a href="/index.php/Homeen3/Invest/contact">客服热线</a></li>
+						<li class="li"><a href="/index.php/Homeen3/Invest/suggest">意见建议</a></li>
+					</ul>
+					<p>广告位</p>
+					<a href=""><img class="adapt" src="{$link['link_url']}" width="220px" /></a>
+				</div>
+				<div class="right fr">
+					<div class="title cl">
+						<span class="fl">所有列表</span>
+						<a href="" class="fr">MORE&gt;&gt;</a>
+					</div>
+					<ul>
+						<foreach name="list" item="val">
+							<li class="cl">
+								<div class="l fl"><img class="adapt" src="{$val['i_thumb']}" width="196px" height="132px"/></div>
+								<div class="r fl">
+									<div class="title_bar cl">
+										<a href="/index.php/Homeen3/Invest/detail/id/{$val['i_id']}" class="fl">{$val['i_title']}</a><span class="fr">{$val['i_time']}</span>
+									</div>
+									<p style="overflow: hidden;text-overflow: ellipsis;white-space: nowrap;width: 600px;">
+										
+									 <?php 
+							            $str  =stripslashes($val['i_content']);
+							            $str  =mb_substr($str,0,17,'utf-8');
+							            echo htmlspecialchars_decode($str).'...'; 
+							            ?>	
+									</p>
+								</div>
+							</li>
+						</foreach>
+					</ul>
+					<div class="page_turn">
+						<a href="/index.php/Homeen3/Invest/index/p/<?php if($_GET['p']-1>0){echo $_GET['p']-1;}else{echo 1;} ?>">上一页</a>
+						<a href="/index.php/Homeen3/Invest/index/p/1">1</a>
+						<a href="/index.php/Homeen3/Invest/index/p/2">2</a>
+						<span>...</span>
+						<a href="/index.php/Homeen3/Invest/index/p/<?php if($page>3){echo $page-2;}else{echo 4;} ?>"><?php if($page>3){echo $page-2;}else{echo 4;} ?></a>
+						<a href="/index.php/Homeen3/Invest/index/p/<?php if($page>4){echo $page-1;}else{echo 5;} ?>"><?php if($page>4){echo $page-1;}else{echo 5;} ?></a>
+						
+						<a href="/index.php/Homeen3/Invest/index/p/<?php if($_GET['p']+1>$page){echo $page;}else{echo $_GET['p']+1;} ?>">下一页</a>
+						<a href="/index.php/Homeen3/Invest/index/p/{$page}">尾页</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<include file="Common/foot"/>
+	</body>
+</html>
+<script type="text/javascript" src="__JS__jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="__JS__js.js"></script>

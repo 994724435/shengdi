@@ -1,0 +1,244 @@
+@charset "utf-8";
+
+.main{
+	margin-top: 30px;
+}
+.title{
+	margin-bottom: 20px;
+	height: 28px;
+	font-family: "微软雅黑";
+	line-height: 18px;
+	border-bottom: 2px solid #0068b7;
+}
+.title .span1{
+	color: #152500;
+}
+.title .span2{
+	color: #a0a0a0;
+	margin-left: 10px;
+}
+.title .more{
+	font-size: 12px;
+	color: #707070;
+}
+.block1 .left,
+.block1 .center,
+.block1 .right{
+	width: 300px;
+	height: 250px;
+	overflow: hidden;
+}
+.block1 .center{
+	margin: 0 50px;
+}
+.block1 .left .pic,
+.block1 .right .pic{
+	width: 300px;
+	height: 100px;
+	margin-bottom: 10px;
+}
+.block1 .left p{
+	font-size: 12px;
+	color: #626262;
+	text-indent: 24px;
+	line-height: 18px;
+}
+.block1 .right p,
+.block1 .right p a{
+	font-size: 12px;
+	color: #626262;
+	line-height: 22px;
+}
+.block1 .right p span{
+	font-size: 12px;
+	color: #313131;
+}
+.block1 .center .div1{
+	padding-bottom: 10px;
+	margin-bottom: 5px;
+	border-bottom: 1px dashed #999;
+}
+.block1 .center .div1 .l{
+	width: 140px;
+	height: 90px;
+}
+.block1 .center .div1 .r{
+	width: 150px;
+	height: 90px;
+	margin-left: 10px;
+}
+.block1 .center .div1 .r .t{
+	display: block;
+	font-size: 12px;
+	line-height: 20px;
+	color: #535353;
+}
+.block1 .center .div1 .r .d{
+	line-height: 20px;
+	font-size: 12px;
+	color: #c3c3c3;
+}
+.block1 .center .div1 .r .c{
+	line-height: 14px;
+	font-size: 12px;
+	color: #4a4a4a;
+	line-height: 16px;
+}
+.block1 .center .div1:hover .r .c{
+	color: #0068b7;
+}
+.block1 .center ul li:before{
+	content: "";
+	width: 4px;
+	height: 4px;
+	float: left;
+	display: inline-block;
+	margin-top: 12px;
+	margin-right: 5px;
+	border-radius: 50%;
+	background-color: #0068b7;
+}
+.block1 .center ul li{
+	height: 24px;
+	line-height: 24px;
+}
+.block1 .center ul li a{
+	display: block;
+	width: 290px;
+	font-size: 12px;
+	color: #4a4a4a;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.ad{
+	display: block;
+	height: 90px;
+	margin-top: 30px;
+}
+.block2 .marquee{
+	height: 215px;
+	position: relative;
+	overflow: hidden;
+}
+.block2 .marquee > a{
+	width: 25px;
+	height: 50px;
+	position: absolute;
+	top: 50%;
+	margin-top: -25px;
+	background-color: rgba(160, 160, 160, 0.75);
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.block2 .marquee > a.prev{
+	left: 5px;
+	background-image: url(../images/marquee_prev.png);
+}
+.block2 .marquee > a.next{
+	right: 5px;
+	background-image: url(../images/marquee_next.png);
+}
+.block2 .marquee > a:hover{
+	background-color: rgba(0, 160, 233, 0.75);
+}
+.block2 .marquee ul{
+	height: 215px;
+	position: relative;
+}
+.block2 .marquee ul li{
+	padding: 0 5px;
+}
+.block2 .marquee ul li a{
+	display: block;
+	width: 220px;
+	height: 195px;
+	padding: 9px;
+	border: 1px solid #ddd;
+}
+.block2 .marquee ul li a p{
+	text-align: center;
+	height: 20px;
+	line-height: 20px;
+	font-family: "微软雅黑";
+	font-size: 14px;
+	color: #707070;
+	margin-top: 10px;
+}
+.block2 .marquee ul li a:hover{
+	border-color: #0068B7;
+}
+.block3 .left{
+	width: 374px;
+	padding-right: 18px;
+	border-right: 1px dashed #ccc;
+}
+.block3 .right{
+	width: 588px;
+}
+.block3 .left .pic{
+	width: 374px;
+	height: 168px;
+	margin-bottom: 6px;
+}
+.block3 .left > a{
+	font-size: 14px;
+	color: #535353;
+	display: block;
+	height: 27px;
+	line-height: 27px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.block3 .left > a:before{
+	content: "";
+	display: inline-block;
+	width: 5px;
+	height: 5px;
+	border-radius: 50%;
+	background-color: #0068b7;
+	margin-bottom: 2px;
+	margin-right: 5px;
+}
+.block3 .right ul li{
+	height: 80px;
+	overflow: hidden;
+	padding: 10px 0;
+	border-top: 1px dashed #ccc;
+}
+.block3 .right ul li:first-child{
+	border-top: 0;
+	padding-top: 0;
+}
+.block3 .right ul li .pic{
+	width: 155px;
+	height: 80px;
+}
+.block3 .right ul li .info{
+	width: 414px;
+	height: 80px;
+	overflow: hidden;
+}
+.block3 .right ul li .info a{
+	display: block;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	font-family: "微软雅黑";
+	font-size: 14px;
+	color: #535353;
+}
+.block3 .right ul li .info p{
+	font-size: 12px;
+	color: #707070;
+	margin-top: 6px;
+	line-height: 18px;
+}
+/*一些hover效果*/
+.block1 .center ul li a:hover,
+.block1 .right p a:hover,
+.block3 .left > a:hover,
+.block3 .right ul li:hover .info p{
+	color: #0068b7;
+}

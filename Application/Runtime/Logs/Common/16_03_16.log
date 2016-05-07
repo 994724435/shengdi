@@ -1,0 +1,30 @@
+[ 2016-03-16T10:17:23+08:00 ] ::1 /Public/Home/css/font/vjs.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001148s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-16T10:17:23+08:00 ] ::1 /Public/Home/css/font/vjs.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000708s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-16T10:19:16+08:00 ] ::1 /index.php/Home4/Walkto/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001122s ]
+ERR: 无法加载模块:Home4
+
+[ 2016-03-16T21:18:52+08:00 ] ::1 /Public/Home/css/font/vjs.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000811s ]
+ERR: 无法加载模块:Public
+
+[ 2016-03-16T21:18:52+08:00 ] ::1 /Public/Home/css/font/vjs.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006346s ]
+ERR: 无法加载模块:Public
+

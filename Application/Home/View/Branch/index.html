@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="页面描述"/>
+		<meta name="keywords" content="关键字,关键字"/>
+		<meta name="robots" content="index,follow"/>
+		<meta name="renderer" content="webkit">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="__CSS__global.css"/>
+		<link rel="stylesheet" type="text/css" href="__CSS__branch.list.css"/>
+	</head>
+	<body>
+		<include file="Common/header"/>
+		<div class="center-block">
+			<div class="location">当前位置：<a href="">首页</a>&nbsp;&gt;&gt;&nbsp;<span>森迪产业</span></div>
+			<div class="main_section cl">
+				<div class="left fl">
+					<ul class="menu">
+						<li class="tit">导航</li>
+						<foreach name="result" item="vo">
+						<li class="li" style="overflow: hidden;text-overflow: ellipsis;white-space: nowrap;"><a href="/index.php/Home/Branch/detail/id/{$vo['w_id']}">{$vo['w_name']}</a></li>
+						</foreach>
+					
+					</ul>
+					<p>广告位</p>
+					<a href=""><img class="adapt" src="{$link['link_url']}" width="220px" /></a>
+				</div>
+				<div class="right fr">
+					<div class="title cl">
+						<span class="fl">分公司</span>
+						<a href="" class="fr">MORE&gt;&gt;</a>
+					</div>
+					<div class="branch_list cl">
+						<foreach name="result" item="val">
+							
+						<a href="/index.php/Home{$val['w_id']}/Index" class="fl">
+							<div class="pic"><div><img class="adapt" src="{$val['w_thumb']}"/></div></div>
+							<p style="overflow: hidden;text-overflow: ellipsis;white-space: nowrap;">{$val['w_name']}</p>
+						</a>
+						</foreach>
+					</div>
+				</div>
+			</div>
+		</div>
+	  <include file="Common/foot"/>
+	</body>
+</html>
+<script type="text/javascript" src="__JS__jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="__JS__js.js"></script>

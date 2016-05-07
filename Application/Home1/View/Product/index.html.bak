@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="页面描述"/>
+		<meta name="keywords" content="关键字,关键字"/>
+		<meta name="robots" content="index,follow"/>
+		<meta name="renderer" content="webkit">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="__CSS__global.css"/>
+		<link rel="stylesheet" type="text/css" href="__CSS__product.list.css"/>
+	</head>
+	<body>
+		<include file="Common/header"/>
+		<div class="center-block">
+			<div class="location">当前位置：<a href="">首页</a>&nbsp;&gt;&gt;&nbsp;<span>产品展示</span></div>
+			<div class="main_section cl">
+				<div class="left fl">
+					<ul class="menu">
+						<li class="tit">导航</li>
+						<foreach name="cate" item='vo'>
+						<li class="li"><a href="/index.php/Home1/Product/index/id/{$vo['cate_id']}">{$vo['cate_name']}</a></li>
+						</foreach>
+						<!--<li class="li"><a href="">产品B</a></li>
+						<li class="li"><a href="">产品C</a></li>
+						<li class="li"><a href="">产品D</a></li>-->
+					</ul>
+					<p>广告位</p>
+					<a href=""><img class="adapt" src="__IMAGES__7.jpg" /></a>
+				</div>
+				<div class="right fr">
+					<div class="title cl">
+						<span class="fl">产品展示</span>
+					</div>
+					<div class="product_list cl">
+				
+						<!--<a href="" class="fl">
+							<div class="pic"><div><img class="adapt" src="__IMAGES__5.jpg"/></div></div>
+							<p>产品展示</p>
+						</a>-->
+						<!--<a href="" class="x fl">
+							<div class="pic"><div><img class="adapt" src="__IMAGES__5.jpg"/></div></div>
+							<p>产品展示</p>
+						</a>-->
+						<volist name="list" id="vo" key="k">
+						<a href="" class="fl <?php if($k==2||$key==5||$key==8){echo 'x';} ?>">
+							<div class="pic"><div><img class="adapt" src="<?php if($vo['pro_thumb']){echo $vo['pro_thumb'];}else{echo '__IMAGES__5.jpg';} ?>"/></div></div>
+							<p>{$vo['pro_name']}</p>
+						</a>					
+						</volist>
+						
+					</div>
+					<div class="page_turn">
+						<a href="/index.php/Home1/Product/index/p/<?php if($_GET['p']-1<=0){echo 1;}else{echo $_GET['p']-1;} ?>">上一页</a>
+						<a href="/index.php/Home1/Product/index/p/1">1</a>
+						<a href="/index.php/Home1/Product/index/p/2">2</a>				
+						<span>...</span>
+						<a href="/index.php/Home1/Product/index/p/{$page}"><?php if($page>2){echo $page;}else{echo '';} ?></a>
+						<a href="/index.php/Home1/Product/index/p/<?php if($_GET['p']+1<$page){echo $_GET['p']+1;}else{echo $page;} ?>">下一页</a>
+						<a href="/index.php/Home1/Product/index/p/{$page}">尾页</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<include file="Common/foot"/>
+	</body>
+</html>
+<script type="text/javascript" src="__JS__jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="__JS__js.js"></script>

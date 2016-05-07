@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+.pic{
+	margin: 20px auto;
+}
+.pic ~ p{
+	font-family: "微软雅黑";
+	font-size: 18px;
+	color: #333;
+	margin-bottom: 20px;
+}
+.pic ~ p a{
+	color: #333;
+}

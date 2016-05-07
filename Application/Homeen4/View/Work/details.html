@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="页面描述"/>
+		<meta name="keywords" content="关键字,关键字"/>
+		<meta name="robots" content="index,follow"/>
+		<meta name="renderer" content="webkit">
+		<title></title>
+			<link rel="stylesheet" type="text/css" href="__CSS__filiale.global.css"/>
+		<link rel="stylesheet" type="text/css" href="__CSS__filiale4.global.css"/>
+		<link rel="stylesheet" type="text/css" href="__CSS__zp2.css"/>
+	</head>
+	<body>
+		<include file="Common/header"/>	
+		
+		<div class="center-block">
+			<div class="location">Current Location：<a href="/index.php/Homeen4/Index">Home</a>&nbsp;&gt;&gt;&nbsp;<span>Join Sunday</span></div>
+			<div class="main_section cl">
+				<div class="left fl">
+					<ul class="menu">
+						<li class="tit">Navigation</li>
+						<li class="li"><a href="/index.php/Homeen4/Work/index/title/社会招聘">Social Recruitment</a></li>
+						<li class="li"><a href="/index.php/Homeen4/Work/index/title/校园招聘">Campus Recruitment</a></li>
+					</ul>
+					<!--<p>广告位</p>
+					<a href=""><img class="adapt" src="{$link['link_url']}" width="220px" /></a>-->
+				</div>
+				<div class="right fr">
+					<div class="title cl">
+						<span class="fl">View Details</span>
+						<a href="" class="fr">MORE&gt;&gt;</a>
+					</div>
+					
+					<div class="lzx">
+					   <div class="lbl">
+					    <ul class="zpdh">
+						 <li style="background: #0b8865;">{$result['w_name']}</li>
+						</ul>
+				     </div>
+					<div class="zwjs">
+					 <p class="qm"><span>Salary：{$result['w_month']} </span> <span>Work place：{$result['w_place']}</span></p>
+					 <p class="qm"><span>Working Property： {$result['w_xin']}</span> <span>Closing date：{$result['w_end']}</span></p>
+					 <p class="qm"><span>Work experience： {$result['w_jin']}</span> <span>Minimum education：{$result['w_xue']}</span></p>
+					 <p class="qm"><span>Recruitment number：{$result['w_num']}人 </span> <span>Job category：{$result['w_class']}</span></p>
+					 <p class="qm"><span>Job responsibilities</span></p>
+					 <!--<p class="qw">1、公司新品的开发、调研、口味等的调整工作及研发团队的管理</p>
+					 <p class="qw">2、编制新产品相关的技术、工艺文件及检验标准；</p>
+					 <p class="qw">3、收集国内外技术资料，关注产品动向，为公司决策提供技术参考；</p>
+					 <p class="qw">任职资格：</p>
+					 <p class="qw">1、食品科学相关专业大专以上学历；</p>
+					 <p class="qw">2、8年以上食品研发经验，5年以上研发管理经验；</p>
+					 <p class="qw">3、有卤制品研发经验优先；</p>
+					 <p class="qw">注：如未装邮件插件，请将邮件发送至：qutiange@qutiange.com</p>-->
+					 {$result['w_content']}
+					
+					</div>
+				  </div>
+				</div>
+			</div>
+		</div>
+		
+<include file="Common/foot"/>
+	</body>
+</html>
+<script type="text/javascript" src="__JS__jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="__JS__js.js"></script>

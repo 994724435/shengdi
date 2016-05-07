@@ -1,0 +1,931 @@
+[ 2016-03-23T20:30:29+08:00 ] ::1 /index.php/Home4/Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000882s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000877s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000986s ]
+ERR: 无法加载控制器:Index
+
+[ 2016-03-23T20:37:42+08:00 ] ::1 /index.php/Home4/Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000745s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002663s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002772s ]
+SQL: SHOW COLUMNS FROM `ast_banner4` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `ast_banner4`  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `ast_link4` [ RunTime:0.0086s ]
+SQL: SELECT * FROM `ast_link4`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ast_company4` [ RunTime:0.0184s ]
+SQL: SHOW COLUMNS FROM `ast_article4` [ RunTime:0.0053s ]
+SQL: SHOW COLUMNS FROM `ast_product4` [ RunTime:0.0037s ]
+SQL: SHOW COLUMNS FROM `ast_procate4` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `ast_procate4`  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ast_article4` WHERE `art_cateid` = 4 LIMIT 5   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ast_article4` WHERE `art_cateid` = 5 LIMIT 3   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ast_article4` ORDER BY art_addtime desc LIMIT 2,3   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `ast_article4` ORDER BY art_addtime desc LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ast_product4`  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ast_company4`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000227s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000382s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021404s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021479s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000700s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000753s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001314s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001401s ]
+
+[ 2016-03-23T20:37:52+08:00 ] ::1 /index.php/Home4/Walkto/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000687s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001319s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001400s ]
+SQL: SHOW COLUMNS FROM `ast_banner4` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `ast_banner4`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ast_link4` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `ast_link4`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ast_about4` [ RunTime:0.0192s ]
+SQL: SELECT * FROM `ast_about4`  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ast_about4` WHERE `ast_aid` = 1  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000165s ]
+NOTIC: [8] Undefined index: link_url C:\xampp\htdocs\aiston\Application\Runtime\Cache\Home4\2e45f1082aedd11e572e6d45c99cbf8e.php 第 64 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013219s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013297s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000734s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000788s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000917s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000973s ]
+
+[ 2016-03-23T20:37:54+08:00 ] ::1 /index.php/Home4/product/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000653s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001698s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001895s ]
+SQL: SHOW COLUMNS FROM `ast_banner4` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `ast_banner4`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ast_link4` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `ast_link4`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ast_procate4` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `ast_procate4`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `ast_product4` [ RunTime:0.0059s ]
+NOTIC: [8] Undefined index: id C:\xampp\htdocs\aiston\Application\Home4\Controller\ProductController.class.php 第 26 行.
+SQL: SELECT * FROM `ast_product4`  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ast_product4` LIMIT 0,5   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000137s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000205s ]
+NOTIC: [8] Undefined variable: pro C:\xampp\htdocs\aiston\Application\Runtime\Cache\Home4\20cd7fdc1fb85f8abf5f0e66bf23467e.php 第 74 行.
+NOTIC: [8] Undefined variable: pro C:\xampp\htdocs\aiston\Application\Runtime\Cache\Home4\20cd7fdc1fb85f8abf5f0e66bf23467e.php 第 74 行.
+NOTIC: [8] Undefined variable: pro C:\xampp\htdocs\aiston\Application\Runtime\Cache\Home4\20cd7fdc1fb85f8abf5f0e66bf23467e.php 第 74 行.
+NOTIC: [8] Undefined variable: pro C:\xampp\htdocs\aiston\Application\Runtime\Cache\Home4\20cd7fdc1fb85f8abf5f0e66bf23467e.php 第 74 行.
+NOTIC: [8] Undefined variable: pro C:\xampp\htdocs\aiston\Application\Runtime\Cache\Home4\20cd7fdc1fb85f8abf5f0e66bf23467e.php 第 74 行.
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\aiston\Application\Runtime\Cache\Home4\20cd7fdc1fb85f8abf5f0e66bf23467e.php 第 83 行.
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\aiston\Application\Runtime\Cache\Home4\20cd7fdc1fb85f8abf5f0e66bf23467e.php 第 88 行.
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\aiston\Application\Runtime\Cache\Home4\20cd7fdc1fb85f8abf5f0e66bf23467e.php 第 88 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014402s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014468s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001420s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001519s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002411s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002537s ]
+
+[ 2016-03-23T20:37:56+08:00 ] ::1 /index.php/Home4/Walkto/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000522s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001090s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001191s ]
+SQL: SHOW COLUMNS FROM `ast_banner4` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `ast_banner4`  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `ast_link4` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `ast_link4`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ast_about4` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `ast_about4`  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ast_about4` WHERE `ast_aid` = 1  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000173s ]
+NOTIC: [8] Undefined index: link_url C:\xampp\htdocs\aiston\Application\Runtime\Cache\Home4\2e45f1082aedd11e572e6d45c99cbf8e.php 第 64 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010125s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010216s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001049s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001180s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001409s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001500s ]
+
+[ 2016-03-23T20:37:59+08:00 ] ::1 /index.php/Home4/Walkto/index/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000458s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000723s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000785s ]
+SQL: SHOW COLUMNS FROM `ast_banner4` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `ast_banner4`  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `ast_link4` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `ast_link4`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ast_about4` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `ast_about4`  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ast_about4` WHERE `ast_aid` = 1  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000174s ]
+NOTIC: [8] Undefined index: link_url C:\xampp\htdocs\aiston\Application\Runtime\Cache\Home4\2e45f1082aedd11e572e6d45c99cbf8e.php 第 64 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011812s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011882s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000480s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000529s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000819s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000875s ]
+
+[ 2016-03-23T20:38:00+08:00 ] ::1 /index.php/Home4/Walkto/index/id/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000772s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000818s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000907s ]
+SQL: SHOW COLUMNS FROM `ast_banner4` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `ast_banner4`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ast_link4` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `ast_link4`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ast_about4` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `ast_about4`  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ast_about4` WHERE `ast_aid` = 2  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000180s ]
+NOTIC: [8] Undefined index: link_url C:\xampp\htdocs\aiston\Application\Runtime\Cache\Home4\2e45f1082aedd11e572e6d45c99cbf8e.php 第 64 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011119s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011201s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001430s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001564s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001695s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001849s ]
+
+[ 2016-03-23T20:38:01+08:00 ] ::1 /index.php/Home4/Walkto/index/id/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000771s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000797s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000870s ]
+SQL: SHOW COLUMNS FROM `ast_banner4` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `ast_banner4`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `ast_link4` [ RunTime:0.0056s ]
+SQL: SELECT * FROM `ast_link4`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ast_about4` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `ast_about4`  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ast_about4` WHERE `ast_aid` = 3  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000207s ]
+NOTIC: [8] Undefined index: link_url C:\xampp\htdocs\aiston\Application\Runtime\Cache\Home4\2e45f1082aedd11e572e6d45c99cbf8e.php 第 64 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013018s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013108s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000595s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000660s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000748s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000803s ]
+
+[ 2016-03-23T20:38:03+08:00 ] ::1 /index.php/Home4/Walkto/index/id/4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000461s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001118s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001233s ]
+SQL: SHOW COLUMNS FROM `ast_banner4` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `ast_banner4`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ast_link4` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `ast_link4`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ast_about4` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `ast_about4`  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ast_about4` WHERE `ast_aid` = 4  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000168s ]
+NOTIC: [8] Undefined index: link_url C:\xampp\htdocs\aiston\Application\Runtime\Cache\Home4\2e45f1082aedd11e572e6d45c99cbf8e.php 第 64 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009553s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009629s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000524s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000591s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001640s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001834s ]
+
+[ 2016-03-23T20:38:04+08:00 ] ::1 /index.php/Home4/News/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000588s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000783s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000853s ]
+SQL: SHOW COLUMNS FROM `ast_banner4` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `ast_banner4`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ast_link4` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `ast_link4`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ast_article4` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `ast_article4`  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `ast_artcate4` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `ast_artcate4`  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: id C:\xampp\htdocs\aiston\Application\Home4\Controller\NewsController.class.php 第 27 行.
+SQL: SELECT * FROM `ast_article4` LIMIT 0,5   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000172s ]
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\aiston\Application\Runtime\Cache\Home4\1cdf70a4113fb044c8f293c159134d51.php 第 80 行.
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\aiston\Application\Runtime\Cache\Home4\1cdf70a4113fb044c8f293c159134d51.php 第 87 行.
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\aiston\Application\Runtime\Cache\Home4\1cdf70a4113fb044c8f293c159134d51.php 第 87 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014118s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014182s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000490s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000539s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000714s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000763s ]
+
+[ 2016-03-23T20:38:07+08:00 ] ::1 /index.php/Home4/Contact/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000473s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000738s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000804s ]
+SQL: SHOW COLUMNS FROM `ast_banner4` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `ast_banner4`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `ast_link4` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `ast_link4`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ast_company4` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `ast_company4` WHERE `c_id` = 2  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000149s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000260s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013261s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013388s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000531s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000583s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000989s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001064s ]
+
+[ 2016-03-23T20:38:09+08:00 ] ::1 /index.php/Home4/Work/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000658s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001261s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001415s ]
+SQL: SHOW COLUMNS FROM `ast_banner4` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `ast_banner4`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ast_link4` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `ast_link4`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `ast_work4` [ RunTime:0.0198s ]
+NOTIC: [8] Undefined index: title C:\xampp\htdocs\aiston\Application\Home4\Controller\WorkController.class.php 第 16 行.
+SQL: SELECT * FROM `ast_work4` ORDER BY w_cateid asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `ast_work4` LIMIT 0,6   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000185s ]
+NOTIC: [8] Undefined index: link_url C:\xampp\htdocs\aiston\Application\Runtime\Cache\Home4\3a2ade48de08f0bf10622a3d99d3bf85.php 第 62 行.
+NOTIC: [8] Undefined index: title C:\xampp\htdocs\aiston\Application\Runtime\Cache\Home4\3a2ade48de08f0bf10622a3d99d3bf85.php 第 67 行.
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\aiston\Application\Runtime\Cache\Home4\3a2ade48de08f0bf10622a3d99d3bf85.php 第 93 行.
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\aiston\Application\Runtime\Cache\Home4\3a2ade48de08f0bf10622a3d99d3bf85.php 第 101 行.
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\aiston\Application\Runtime\Cache\Home4\3a2ade48de08f0bf10622a3d99d3bf85.php 第 101 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013157s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013219s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000536s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000587s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000739s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000792s ]
+
+[ 2016-03-23T20:38:11+08:00 ] ::1 /index.php/Home4/Work/index/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000487s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000907s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000995s ]
+SQL: SHOW COLUMNS FROM `ast_banner4` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `ast_banner4`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ast_link4` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `ast_link4`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ast_work4` [ RunTime:0.0046s ]
+NOTIC: [8] Undefined index: title C:\xampp\htdocs\aiston\Application\Home4\Controller\WorkController.class.php 第 16 行.
+SQL: SELECT * FROM `ast_work4` ORDER BY w_cateid asc  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `ast_work4` LIMIT 0,6   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000212s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000351s ]
+NOTIC: [8] Undefined index: link_url C:\xampp\htdocs\aiston\Application\Runtime\Cache\Home4\3a2ade48de08f0bf10622a3d99d3bf85.php 第 62 行.
+NOTIC: [8] Undefined index: title C:\xampp\htdocs\aiston\Application\Runtime\Cache\Home4\3a2ade48de08f0bf10622a3d99d3bf85.php 第 67 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015162s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015261s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000947s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001041s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001264s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001351s ]
+
+[ 2016-03-23T20:38:12+08:00 ] ::1 /index.php/Home4/Work/index/p/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000462s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000706s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000766s ]
+SQL: SHOW COLUMNS FROM `ast_banner4` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `ast_banner4`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `ast_link4` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `ast_link4`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ast_work4` [ RunTime:0.0058s ]
+NOTIC: [8] Undefined index: title C:\xampp\htdocs\aiston\Application\Home4\Controller\WorkController.class.php 第 16 行.
+SQL: SELECT * FROM `ast_work4` ORDER BY w_cateid asc  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `ast_work4` LIMIT 6,6   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000170s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000279s ]
+NOTIC: [8] Undefined index: link_url C:\xampp\htdocs\aiston\Application\Runtime\Cache\Home4\3a2ade48de08f0bf10622a3d99d3bf85.php 第 62 行.
+NOTIC: [8] Undefined index: title C:\xampp\htdocs\aiston\Application\Runtime\Cache\Home4\3a2ade48de08f0bf10622a3d99d3bf85.php 第 67 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013666s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013733s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000563s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000615s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000753s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000805s ]
+
+[ 2016-03-23T20:38:14+08:00 ] ::1 /index.php/Home4/Work/index/title/%E6%A0%A1%E5%9B%AD%E6%8B%9B%E8%81%98
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000521s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000723s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000784s ]
+SQL: SHOW COLUMNS FROM `ast_banner4` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `ast_banner4`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ast_link4` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `ast_link4`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ast_work4` [ RunTime:0.0061s ]
+SQL: SELECT * FROM `ast_work4` WHERE `w_cateid` = '校园招聘'  [ RunTime:0.0007s ]
+NOTIC: [8] Undefined variable: Page C:\xampp\htdocs\aiston\Application\Home4\Controller\WorkController.class.php 第 24 行.
+NOTIC: [8] Trying to get property of non-object C:\xampp\htdocs\aiston\Application\Home4\Controller\WorkController.class.php 第 24 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000127s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000215s ]
+NOTIC: [8] Undefined index: link_url C:\xampp\htdocs\aiston\Application\Runtime\Cache\Home4\3a2ade48de08f0bf10622a3d99d3bf85.php 第 62 行.
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\aiston\Application\Runtime\Cache\Home4\3a2ade48de08f0bf10622a3d99d3bf85.php 第 93 行.
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\aiston\Application\Runtime\Cache\Home4\3a2ade48de08f0bf10622a3d99d3bf85.php 第 101 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012227s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012292s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000646s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000703s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001225s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001322s ]
+
+[ 2016-03-23T20:38:15+08:00 ] ::1 /index.php/Home4/Work/index/title/%E7%A4%BE%E4%BC%9A%E6%8B%9B%E8%81%98
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000689s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001004s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001124s ]
+SQL: SHOW COLUMNS FROM `ast_banner4` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `ast_banner4`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `ast_link4` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `ast_link4`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ast_work4` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `ast_work4` WHERE `w_cateid` = '社会招聘'  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: Page C:\xampp\htdocs\aiston\Application\Home4\Controller\WorkController.class.php 第 24 行.
+NOTIC: [8] Trying to get property of non-object C:\xampp\htdocs\aiston\Application\Home4\Controller\WorkController.class.php 第 24 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000147s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000245s ]
+NOTIC: [8] Undefined index: link_url C:\xampp\htdocs\aiston\Application\Runtime\Cache\Home4\3a2ade48de08f0bf10622a3d99d3bf85.php 第 62 行.
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\aiston\Application\Runtime\Cache\Home4\3a2ade48de08f0bf10622a3d99d3bf85.php 第 93 行.
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\aiston\Application\Runtime\Cache\Home4\3a2ade48de08f0bf10622a3d99d3bf85.php 第 101 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012937s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012999s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000580s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000636s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000762s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000817s ]
+
+[ 2016-03-23T20:38:17+08:00 ] ::1 /index.php/Home4/Work/index/p/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000622s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000915s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000984s ]
+SQL: SHOW COLUMNS FROM `ast_banner4` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `ast_banner4`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ast_link4` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `ast_link4`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ast_work4` [ RunTime:0.0048s ]
+NOTIC: [8] Undefined index: title C:\xampp\htdocs\aiston\Application\Home4\Controller\WorkController.class.php 第 16 行.
+SQL: SELECT * FROM `ast_work4` ORDER BY w_cateid asc  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `ast_work4` LIMIT 0,6   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000190s ]
+NOTIC: [8] Undefined index: link_url C:\xampp\htdocs\aiston\Application\Runtime\Cache\Home4\3a2ade48de08f0bf10622a3d99d3bf85.php 第 62 行.
+NOTIC: [8] Undefined index: title C:\xampp\htdocs\aiston\Application\Runtime\Cache\Home4\3a2ade48de08f0bf10622a3d99d3bf85.php 第 67 行.
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\aiston\Application\Runtime\Cache\Home4\3a2ade48de08f0bf10622a3d99d3bf85.php 第 93 行.
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\aiston\Application\Runtime\Cache\Home4\3a2ade48de08f0bf10622a3d99d3bf85.php 第 101 行.
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\aiston\Application\Runtime\Cache\Home4\3a2ade48de08f0bf10622a3d99d3bf85.php 第 101 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015469s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015530s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000481s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000530s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001142s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001241s ]
+
+[ 2016-03-23T20:44:43+08:00 ] ::1 /index.php/Home4/Walkto/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000754s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002244s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002700s ]
+SQL: SHOW COLUMNS FROM `ast_banner4` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `ast_banner4`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ast_link4` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `ast_link4`  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `ast_about4` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `ast_about4`  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ast_about4` WHERE `ast_aid` = 1  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000155s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000274s ]
+NOTIC: [8] Undefined index: link_url C:\xampp\htdocs\aiston\Application\Runtime\Cache\Home4\2e45f1082aedd11e572e6d45c99cbf8e.php 第 64 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019403s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019514s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001726s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001845s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002222s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002326s ]
+
+[ 2016-03-23T20:45:33+08:00 ] ::1 /index.php/Home4/Walkto/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000533s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001485s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001610s ]
+SQL: SHOW COLUMNS FROM `ast_banner4` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `ast_banner4`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ast_link4` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `ast_link4`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ast_about4` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `ast_about4`  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `ast_about4` WHERE `ast_aid` = 1  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000168s ]
+NOTIC: [8] Undefined index: link_url C:\xampp\htdocs\aiston\Application\Runtime\Cache\Home4\2e45f1082aedd11e572e6d45c99cbf8e.php 第 64 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012754s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012829s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000555s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000624s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000986s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001056s ]
+
+[ 2016-03-23T20:52:21+08:00 ] ::1 /index.php/Home4/Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000578s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001608s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001706s ]
+SQL: SHOW COLUMNS FROM `ast_banner4` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `ast_banner4`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ast_link4` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `ast_link4`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ast_company4` [ RunTime:0.0048s ]
+SQL: SHOW COLUMNS FROM `ast_article4` [ RunTime:0.0047s ]
+SQL: SHOW COLUMNS FROM `ast_product4` [ RunTime:0.0046s ]
+SQL: SHOW COLUMNS FROM `ast_procate4` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `ast_procate4`  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ast_article4` WHERE `art_cateid` = 4 LIMIT 5   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `ast_article4` WHERE `art_cateid` = 5 LIMIT 3   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ast_article4` ORDER BY art_addtime desc LIMIT 2,3   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `ast_article4` ORDER BY art_addtime desc LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ast_product4`  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ast_company4`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000279s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000457s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020704s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020786s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000965s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001023s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002790s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002897s ]
+
+[ 2016-03-23T20:52:23+08:00 ] ::1 /index.php/Home4/Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000862s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001217s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001318s ]
+SQL: SHOW COLUMNS FROM `ast_banner4` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `ast_banner4`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ast_link4` [ RunTime:0.0057s ]
+SQL: SELECT * FROM `ast_link4`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `ast_company4` [ RunTime:0.0047s ]
+SQL: SHOW COLUMNS FROM `ast_article4` [ RunTime:0.0049s ]
+SQL: SHOW COLUMNS FROM `ast_product4` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `ast_procate4` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `ast_procate4`  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ast_article4` WHERE `art_cateid` = 4 LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `ast_article4` WHERE `art_cateid` = 5 LIMIT 3   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ast_article4` ORDER BY art_addtime desc LIMIT 2,3   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `ast_article4` ORDER BY art_addtime desc LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ast_product4`  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ast_company4`  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000133s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000200s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024516s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024619s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000874s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000925s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002128s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002221s ]
+
+[ 2016-03-23T20:53:08+08:00 ] ::1 /index.php/Home4/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000988s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001489s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001606s ]
+SQL: SHOW COLUMNS FROM `ast_banner4` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `ast_banner4`  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `ast_link4` [ RunTime:0.0066s ]
+SQL: SELECT * FROM `ast_link4`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `ast_company4` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `ast_article4` [ RunTime:0.0038s ]
+SQL: SHOW COLUMNS FROM `ast_product4` [ RunTime:0.0042s ]
+SQL: SHOW COLUMNS FROM `ast_procate4` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `ast_procate4`  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `ast_article4` WHERE `art_cateid` = 4 LIMIT 5   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `ast_article4` WHERE `art_cateid` = 5 LIMIT 3   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `ast_article4` ORDER BY art_addtime desc LIMIT 2,3   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `ast_article4` ORDER BY art_addtime desc LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ast_product4`  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ast_company4`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000129s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000193s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018986s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019072s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000893s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000946s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001640s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001724s ]
+
+[ 2016-03-23T20:53:11+08:00 ] ::1 /index.php/Home4/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000728s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001575s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001688s ]
+SQL: SHOW COLUMNS FROM `ast_banner4` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `ast_banner4`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ast_link4` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `ast_link4`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `ast_company4` [ RunTime:0.0061s ]
+SQL: SHOW COLUMNS FROM `ast_article4` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `ast_product4` [ RunTime:0.0037s ]
+SQL: SHOW COLUMNS FROM `ast_procate4` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `ast_procate4`  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ast_article4` WHERE `art_cateid` = 4 LIMIT 5   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ast_article4` WHERE `art_cateid` = 5 LIMIT 3   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ast_article4` ORDER BY art_addtime desc LIMIT 2,3   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `ast_article4` ORDER BY art_addtime desc LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `ast_product4`  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `ast_company4`  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000149s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000224s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019290s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019380s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001243s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001357s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002450s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002545s ]
+
+[ 2016-03-23T20:57:20+08:00 ] ::1 /index.php/Home4/Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000768s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001370s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001482s ]
+SQL: SHOW COLUMNS FROM `ast_banner4` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `ast_banner4`  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `ast_link4` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `ast_link4`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ast_company4` [ RunTime:0.0037s ]
+SQL: SHOW COLUMNS FROM `ast_article4` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `ast_product4` [ RunTime:0.0041s ]
+SQL: SHOW COLUMNS FROM `ast_procate4` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `ast_procate4`  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `ast_article4` WHERE `art_cateid` = 4 LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `ast_article4` WHERE `art_cateid` = 5 LIMIT 3   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ast_article4` ORDER BY art_addtime desc LIMIT 2,3   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `ast_article4` ORDER BY art_addtime desc LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ast_product4`  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ast_company4`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000124s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000186s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019406s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019483s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001002s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001060s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001569s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001655s ]
+
+[ 2016-03-23T20:57:39+08:00 ] ::1 /index.php/Home4/Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000631s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001125s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001191s ]
+SQL: SHOW COLUMNS FROM `ast_banner4` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `ast_banner4`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `ast_link4` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `ast_link4`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `ast_company4` [ RunTime:0.0055s ]
+SQL: SHOW COLUMNS FROM `ast_article4` [ RunTime:0.0048s ]
+SQL: SHOW COLUMNS FROM `ast_product4` [ RunTime:0.0045s ]
+SQL: SHOW COLUMNS FROM `ast_procate4` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `ast_procate4`  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ast_article4` WHERE `art_cateid` = 4 LIMIT 5   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ast_article4` WHERE `art_cateid` = 5 LIMIT 3   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ast_article4` ORDER BY art_addtime desc LIMIT 2,3   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `ast_article4` ORDER BY art_addtime desc LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ast_product4`  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ast_company4`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000135s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000205s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021772s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021930s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000927s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000982s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001883s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001974s ]
+
+[ 2016-03-23T20:57:42+08:00 ] ::1 /index.php/Home4/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000575s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002306s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002439s ]
+SQL: SHOW COLUMNS FROM `ast_banner4` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `ast_banner4`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ast_link4` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `ast_link4`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ast_company4` [ RunTime:0.0063s ]
+SQL: SHOW COLUMNS FROM `ast_article4` [ RunTime:0.0041s ]
+SQL: SHOW COLUMNS FROM `ast_product4` [ RunTime:0.0051s ]
+SQL: SHOW COLUMNS FROM `ast_procate4` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `ast_procate4`  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ast_article4` WHERE `art_cateid` = 4 LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `ast_article4` WHERE `art_cateid` = 5 LIMIT 3   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ast_article4` ORDER BY art_addtime desc LIMIT 2,3   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `ast_article4` ORDER BY art_addtime desc LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `ast_product4`  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `ast_company4`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000132s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000202s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021746s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021851s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000945s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001800s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001886s ]
+
+[ 2016-03-23T20:57:46+08:00 ] ::1 /index.php/Home4/Walkto/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000615s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001555s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001673s ]
+SQL: SHOW COLUMNS FROM `ast_banner4` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `ast_banner4`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ast_link4` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `ast_link4`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ast_about4` [ RunTime:0.0056s ]
+SQL: SELECT * FROM `ast_about4`  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ast_about4` WHERE `ast_aid` = 1  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000183s ]
+NOTIC: [8] Undefined index: link_url C:\xampp\htdocs\aiston\Application\Runtime\Cache\Home4\2e45f1082aedd11e572e6d45c99cbf8e.php 第 60 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015872s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015934s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000842s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000893s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001099s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001153s ]
+
+[ 2016-03-23T21:09:56+08:00 ] ::1 /index.php/Home4/Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001077s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002007s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002163s ]
+SQL: SHOW COLUMNS FROM `ast_banner4` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `ast_banner4`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `ast_link4` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `ast_link4`  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `ast_company4` [ RunTime:0.0039s ]
+SQL: SHOW COLUMNS FROM `ast_article4` [ RunTime:0.0057s ]
+SQL: SHOW COLUMNS FROM `ast_product4` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `ast_procate4` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `ast_procate4`  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ast_article4` WHERE `art_cateid` = 4 LIMIT 5   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ast_article4` WHERE `art_cateid` = 5 LIMIT 3   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ast_article4` ORDER BY art_addtime desc LIMIT 2,3   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `ast_article4` ORDER BY art_addtime desc LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ast_product4`  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `ast_company4`  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000275s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000396s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021083s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021189s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000566s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000619s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002106s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002197s ]
+
+[ 2016-03-23T21:10:32+08:00 ] ::1 /index.php/Home4/Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000776s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001170s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001259s ]
+SQL: SHOW COLUMNS FROM `ast_banner4` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `ast_banner4`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `ast_link4` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `ast_link4`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ast_company4` [ RunTime:0.0043s ]
+SQL: SHOW COLUMNS FROM `ast_article4` [ RunTime:0.0056s ]
+SQL: SHOW COLUMNS FROM `ast_product4` [ RunTime:0.0039s ]
+SQL: SHOW COLUMNS FROM `ast_procate4` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `ast_procate4`  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ast_article4` WHERE `art_cateid` = 4 LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `ast_article4` WHERE `art_cateid` = 5 LIMIT 3   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ast_article4` ORDER BY art_addtime desc LIMIT 2,3   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `ast_article4` ORDER BY art_addtime desc LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ast_product4`  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `ast_company4`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000199s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000298s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020362s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020439s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000959s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001012s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001764s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001851s ]
+
+[ 2016-03-23T21:10:42+08:00 ] ::1 /index.php/Home4/Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000962s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001172s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001275s ]
+SQL: SHOW COLUMNS FROM `ast_banner4` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `ast_banner4`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `ast_link4` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `ast_link4`  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `ast_company4` [ RunTime:0.0048s ]
+SQL: SHOW COLUMNS FROM `ast_article4` [ RunTime:0.0041s ]
+SQL: SHOW COLUMNS FROM `ast_product4` [ RunTime:0.0053s ]
+SQL: SHOW COLUMNS FROM `ast_procate4` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `ast_procate4`  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `ast_article4` WHERE `art_cateid` = 4 LIMIT 5   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `ast_article4` WHERE `art_cateid` = 5 LIMIT 3   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `ast_article4` ORDER BY art_addtime desc LIMIT 2,3   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `ast_article4` ORDER BY art_addtime desc LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT * FROM `ast_product4`  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `ast_company4`  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000128s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000194s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021502s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021621s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000950s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002777s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002871s ]
+

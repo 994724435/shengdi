@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="页面描述"/>
+		<meta name="keywords" content="关键字,关键字"/>
+		<meta name="robots" content="index,follow"/>
+		<meta name="renderer" content="webkit">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="__CSS__filiale.global.css"/>
+		<link rel="stylesheet" type="text/css" href="__CSS__filiale5.global.css"/>
+		<link rel="stylesheet" type="text/css" href="__CSS__walk.into.css"/>
+	</head>
+	<body>
+		<include file="Common/header"/>
+		<div class="center-block">
+			<div class="location">当前位置：<a href="/index.php/Home5/Index"><span style="font-weight: bold;color: #000000;">返回首页</span></a>&nbsp;&gt;&gt;&nbsp;<span>联系我们</span></div>
+			<div class="main_section cl">
+				<div class="left fl">
+					<ul class="menu">
+						<li class="tit">导航</li>
+						<li class="li"><a href="">联系我们</a></li>
+						<!--<li class="li"><a href="/index.php/Home/Contact/message">网上留言</a></li>-->
+					</ul>
+					
+				</div>
+				<div class="right fr" >
+					<div class="title cl">
+						<span class="fl">联系我们</span>
+						<a href="" class="fr">MORE&gt;&gt;</a>
+					</div>
+					<img class="pic adapt" src="__IMAGES__22.jpg"/>
+					<p>地  址：{$res['c_name']}</p>
+					<p>电  话：{$res['c_thumb']}</p>
+					<p>网  址：<a href="">{$res['c_thumb1']}</a></p>
+					<p>E-mail：{$res['c_thumb2']}</p>
+					<br />
+						<img  src="{$res['c_content']}" style="max-width: 735px;"/>		
+				</div>
+			</div>
+		</div>
+		<include file="Common/foot"/>
+	</body>
+</html>
+<script type="text/javascript" src="__JS__jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="__JS__js.js"></script>

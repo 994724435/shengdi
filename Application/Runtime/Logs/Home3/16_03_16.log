@@ -1,0 +1,28 @@
+[ 2016-03-16T10:19:22+08:00 ] ::1 /index.php/Home3/Walkto/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000669s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001989s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002129s ]
+SQL: SHOW COLUMNS FROM `ast_banner3` [ RunTime:0.0084s ]
+SQL: SELECT * FROM `ast_banner3`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `ast_link3` [ RunTime:0.0088s ]
+SQL: SELECT * FROM `ast_link3`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ast_about3` [ RunTime:0.0246s ]
+SQL: SELECT * FROM `ast_about3`  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ast_about3` WHERE `ast_aid` = 1  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000217s ]
+NOTIC: [8] Undefined index: link_url C:\xampp\htdocs\aiston\Application\Runtime\Cache\Home3\9589e595a8298c37cc30ef46e876ab4d.php 第 64 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014448s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014574s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001056s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001132s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001442s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001517s ]
+

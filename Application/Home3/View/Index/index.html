@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="页面描述"/>
+		<meta name="keywords" content="关键字,关键字"/>
+		<meta name="robots" content="index,follow"/>
+		<meta name="renderer" content="webkit">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="__CSS__filiale.global.css"/>
+		<link rel="stylesheet" type="text/css" href="__CSS__filiale3.global.css"/>
+	</head>
+	<body>
+		<include file="Common/header"/>
+		<div class="center-block">
+			<div class="main block1 cl">
+				<div class="left fl">
+					<div class="title"><span class="span1"><a href="/index.php/Home3/Walkto/index">公司简介</a></span><span class="span2">Company profile</span></div>
+					<div class="pic"><img class="adapt" src="{$intro[0]['c_thumb']}"/></div>
+					<p>
+								<?php 
+					             $str  =stripslashes($intro[0]['c_content']);
+					             echo htmlspecialchars_decode($str); 
+					            ?>
+					</p>
+				</div>
+				<div class="center fl">
+					<div class="title"><span class="span1"><a href="/index.php/Home3/News/index">新闻中心</a></span><span class="span2">News Center</span></div>
+					<div class="div1 cl">
+						<div class="l fl"><img class="adapt" src="{$news1['art_thumb']}"/ width="127px" height="88"></div>
+						<div class="r fl">
+							<a href="/index.php/Home3/News/details/id/{$news1['art_id']}" class="t">{$news1['art_title']}</a>
+							<p class="d">{$news1.art_addtime|date="Y-m-d",###}</p>
+							<!--<p class="c" >
+								<p style="overflow: hidden;text-overflow: ellipsis;white-space: nowrap;">
+									<?php 
+					            $str  =htmlspecialchars_decode($news1['art_content']);
+					            $str1 = mb_strcut($str,0,147,'utf-8');
+					            echo $str1;
+				                 ?>
+								</p>
+																
+							</p>-->
+						</div>
+					</div>
+					<ul>
+						<foreach name="news" item="news">
+						<li><a href="/index.php/Home3/News/details/id/{$news['art_id']}">
+							<?php 
+					            $str  =stripslashes($news['art_content']);
+					            echo htmlspecialchars_decode($str); 
+				            ?>
+						</a></li>
+						</foreach>
+					</ul>
+				</div>
+				<div class="right fl">
+					<div class="title"><span class="span1"><a href="/index.php/Home3/Contact/index">联系方式</a></span><span class="span2">Contact information</span></div>
+					<div class="pic"><img class="adapt" src="__IMAGES__16.jpg"/></div>
+					<p><span>地  址：</span>{$intro[1]['c_name']}</p>
+					<p><span>电  话：</span>{$intro[1]['c_thumb']}</p>
+					<p><span>网  址：</span><a href="" >{$intro[1]['c_thumb1']}</a></p>
+					<p><span>E-mail：</span>{$intro[1]['c_thumb2']}</p>
+				</div>
+			</div>
+			<a href="" class="ad"><img src="__IMAGES__18.jpg"/></a>
+			<div class="main block2">
+				<div class="title"><span class="span1"><a href="/index.php/Home3/product/index">相关产品</a></span><span class="span2">Related products</span></div>
+				<div class="marquee">
+					<ul class="cl">
+						<foreach name="pro" item="vo">
+						<li><a href="/index.php/Home3/Product/details/id/{$vo['pro_id']}" >
+								<div class="pic"><img class="adapt" src="{$vo['pro_thumb']}" width="98%" style="max-height: 170px;"/></div>
+								<p style="margin-top: 18px;">{$vo['pro_name']}</p>
+							</a></li>
+						</foreach>	
+					</ul>
+					<a href="javascript:;" class="prev"></a>
+					<a href="javascript:;" class="next"></a>
+				</div>
+			</div>
+			<div class="main block3 cl">
+				<div class="left fl">
+					<div class="title cl">
+						<span class="span1 fl"><a href="/index.php/Home3/News/index/id/4">推荐信息</a></span>
+						<span class="span2 fl">Recommended information</span>
+						<a href="/index.php/Home3/News/index/id/4" class="more fr">更多》</a>
+					</div>
+					<div class="pic"><img class="adapt" src="__IMAGES__20.jpg"/></div>
+					<foreach name="art" item="art">
+					<a href="/index.php/Home3/News/details/id/{$art['art_id']}">{$art['art_title']}</a>
+					</foreach>
+				</div>
+				<div class="right fr">
+					<div class="title cl">
+						<span class="span1 fl"><a href="/index.php/Home3/News/index/id/5">服务介绍</a></span>
+						<span class="span2 fl">Service Introduction</span>
+						<a href="/index.php/Home3/News/index/id/5" class="more fr">更多》</a>
+					</div>
+					<ul>
+						<foreach name="serverce" item="se">
+						<li class="cl">
+							<div class="pic fl"><img class="adapt" src="{$se['art_thumb']}"/></div>
+							<div class="info fr">
+								<a href="/index.php/Home3/News/details/id/{$se['art_id']}">{$se['art_title']}</a>
+								<p>
+								          	<?php 
+							            $str  =stripslashes($se['art_content']);
+							            echo htmlspecialchars_decode($str); 
+							            ?> 
+								</p>
+							</div>
+						</li>
+						</foreach>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<include file="Common/foot"/>
+	</body>
+</html>
+<script type="text/javascript" src="__JS__jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="__JS__js.js"></script>

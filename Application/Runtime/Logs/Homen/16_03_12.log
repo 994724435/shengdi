@@ -1,0 +1,70 @@
+[ 2016-03-12T09:31:49+08:00 ] ::1 /index.php/Homen/Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000700s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001479s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001577s ]
+SQL: SHOW COLUMNS FROM `ast_banneren` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `ast_banneren`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ast_linken` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `ast_linken`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ast_companyen` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `ast_articleen` [ RunTime:0.0038s ]
+SQL: SHOW COLUMNS FROM `ast_producten` [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `ast_procateen` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `ast_procateen` LIMIT 3   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ast_articleen`  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `ast_companyen`  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ast_articleen` LIMIT 0,4   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000160s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000224s ]
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\aiston\Application\Runtime\Cache\Homen\68c0958da8236402af970fd6e742f3b2.php 第 154 行.
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\aiston\Application\Runtime\Cache\Homen\68c0958da8236402af970fd6e742f3b2.php 第 161 行.
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\aiston\Application\Runtime\Cache\Homen\68c0958da8236402af970fd6e742f3b2.php 第 161 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023009s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023074s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001176s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001227s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002355s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002451s ]
+
+[ 2016-03-12T09:31:52+08:00 ] ::1 /index.php/Homen/Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000621s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002545s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002645s ]
+SQL: SHOW COLUMNS FROM `ast_banneren` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `ast_banneren`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ast_linken` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `ast_linken`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `ast_companyen` [ RunTime:0.0056s ]
+SQL: SHOW COLUMNS FROM `ast_articleen` [ RunTime:0.0038s ]
+SQL: SHOW COLUMNS FROM `ast_producten` [ RunTime:0.0043s ]
+SQL: SHOW COLUMNS FROM `ast_procateen` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `ast_procateen` LIMIT 3   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ast_articleen`  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ast_companyen`  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `ast_articleen` LIMIT 0,4   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000156s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000227s ]
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\aiston\Application\Runtime\Cache\Homen\68c0958da8236402af970fd6e742f3b2.php 第 154 行.
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\aiston\Application\Runtime\Cache\Homen\68c0958da8236402af970fd6e742f3b2.php 第 161 行.
+NOTIC: [8] Undefined index: p C:\xampp\htdocs\aiston\Application\Runtime\Cache\Homen\68c0958da8236402af970fd6e742f3b2.php 第 161 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018980s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019039s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001214s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001277s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002105s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002200s ]
+

@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+.product_list a{
+	display: block;
+	width: 196px;
+	height: 166px;
+	border: 1px solid #ccc;
+	text-align: center;
+	padding: 7px;
+	margin-top: 16px;
+	color: #545454;
+	font-size: 12px;
+}
+.product_list a.x{
+	margin-left: 59px;
+	margin-right: 59px;
+}
+.product_list a p{
+	height: 14px;
+	line-height: 14px;
+	margin-top: 20px;
+}
+.product_list a:hover{
+	color: #00956F;
+	border-color: #00956F;
+}

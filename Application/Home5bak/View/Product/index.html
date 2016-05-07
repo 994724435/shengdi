@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="页面描述"/>
+		<meta name="keywords" content="关键字,关键字"/>
+		<meta name="robots" content="index,follow"/>
+		<meta name="renderer" content="webkit">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="__CSS__filiale.global.css"/>
+		<link rel="stylesheet" type="text/css" href="__CSS__filiale5.global.css"/>
+		<link rel="stylesheet" type="text/css" href="__CSS__walk.into.css"/>
+	</head>
+	<body>
+		<include file="Common/header"/>
+		<div class="center-block">
+			<div class="location">当前位置：<a href="/index.php/Home5/Index/index">首页</a>&nbsp;&gt;&gt;&nbsp;<span>产品简介</span></div>
+			<div class="main_section cl">
+				<div class="left fl">
+					<ul class="menu">
+						<li class="tit">导航</li>
+					<foreach name="cate" item='vo'>
+						<li class="li"><a href="/index.php/Home5/Product/index/id/{$vo['cate_id']}">{$vo['cate_name']}</a></li>
+						</foreach>	
+						<!--<li class="li"><a href="">综合新闻</a></li>
+						<li class="li"><a href="">项目动态</a></li>
+						<li class="li"><a href="">行业动态</a></li>
+						<li class="li"><a href="">企业荣誉</a></li>-->
+					</ul>
+				</div>
+				<div class="right fr">
+					<div class="tit cl">
+						<span class="fl">产品简介</span>
+						<a href="" class="fr">MORE&gt;&gt;</a>
+					</div>
+					<ul>
+						<foreach name="list" item="list">
+						<li class="cl">
+							<div class="l fl"><img class="adapt" src="{$list['pro_thumb']}"/></div>
+							<div class="r fl">
+								<div class="title_bar cl">
+									<a href="/index.php/Home5/product/details/id/{$list['pro_id']}" class="fl">{$list['pro_name']}</a><span class="fr">{$pro.pro_addtime|date='Y-m-d',###}</span>
+								</div>
+								<p>
+									     <?php 
+							               $str  =stripslashes($list['pro_introduction']);
+							               $str1 =str_cut($str,0,150);
+							               echo htmlspecialchars_decode($str1); 
+							            ?>
+								</p>
+							</div>
+						</li>
+						</foreach>
+					</ul>
+					<div class="page_turn">
+						<a href="/index.php/Home5/Product/index/p/<?php if($_GET['p']-1<=0){echo 1;}else{echo $_GET['p']-1;} ?>">上一页</a>
+						<a href="/index.php/Home5/Product/index/p/1">1</a>
+						<a href="/index.php/Home5/Product/index/p/2">2</a>				
+						<span>...</span>
+						<a href="/index.php/Home5/Product/index/p/{$page}"><?php if($page>2){echo $page;}else{echo '暂无';} ?></a>
+						<a href="/index.php/Home5/Product/index/p/<?php if($_GET['p']+1<$page){echo $_GET['p']+1;}else{echo $page;} ?>">下一页</a>
+						<a href="/index.php/Home5/Product/index/p/{$page}">尾页</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<include file="Common/foot"/>
+	</body>
+</html>
+<script type="text/javascript" src="__JS__jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="__JS__js.js"></script>

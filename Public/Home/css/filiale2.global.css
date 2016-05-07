@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+.head_bottom .nav > li:hover > a{
+	background-image: url(../images/filiale2_nav_bg.jpg);
+}
+.main_section .left .menu .li a:hover{
+	background-color: #0b8865;
+}
+.block2 .marquee > a:hover{
+	background-color: #1b8b6c;
+	background-color: rgba(29, 139, 108, 0.75) !important;
+}
+.page_turn a:hover{
+	border-color: #0b8865;
+	background-color: #0b8865;
+}
+.footer{
+	margin-top: 50px;
+	font-size: 12px;
+	color: #fff;
+	padding-top: 18px;
+	padding-bottom: 10px;
+	background-color: #0b8865;
+}
+/*一些hover效果*/
+.location span,
+.main_section .left .menu .tit,
+.main_section .right .tit span,
+.block1 .center .div1:hover .r .c,
+.block1 .center ul li a:hover,
+.block1 .right p a:hover,
+.block2 .marquee ul li a:hover,
+.block3 .left > a:hover,
+.block3 .right ul li:hover .info p,
+.main_section .right > ul li:hover .r .title_bar a,
+.main_section .right > a:hover{
+	color: #0b8865 !important;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="页面描述"/>
+		<meta name="keywords" content="关键字,关键字"/>
+		<meta name="robots" content="index,follow"/>
+		<meta name="renderer" content="webkit">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="__CSS__filiale.global.css"/>
+		<link rel="stylesheet" type="text/css" href="__CSS__filiale2.global.css"/>
+		<link rel="stylesheet" type="text/css" href="__CSS__zp1.css"/>
+	</head>
+	<body>
+		<include file="Common/header"/>
+		
+		<div class="center-block">
+			<div class="location">当前位置：<a href="/index.php/Home2/Index"><span style="font-weight: bold;color: #000000;">返回首页</span></a>&nbsp;&gt;&gt;&nbsp;<span>人才招聘</span>&nbsp;&gt;&gt;&nbsp;<span><?php echo $_GET['title'] ?></span></div>
+			<div class="main_section cl">
+				<div class="left fl">
+					<ul class="menu">
+						<li class="tit">导航</li>
+						<li class="li"><a href="/index.php/Home2/Work/index/title/社会招聘">社会招聘</a></li>
+						<li class="li"><a href="/index.php/Home2/Work/index/title/校园招聘">校园招聘</a></li>
+					</ul>
+					<!--<p>广告位</p>
+					<a href=""><img class="adapt" src="{$link['link_url']}" width="220px" /></a>-->
+				</div>
+				<div class="right fr">
+					<div class="title cl">
+						<span class="fl">
+						<?php if($_GET['title']){echo $_GET['title'];}else{echo '所有职位';} ?>
+						</span>
+						<a href="" class="fr">MORE&gt;&gt;</a>
+					</div>
+					
+					<div class="lzx">
+					   <div class="lbl">
+					    <ul class="zpdh">
+						 <li style="background: #0068b7;">职位名称</li>
+						 <li style="background: #0068b7;">工作地点</li>
+						 <li style="background: #0068b7;">招聘人数</li>
+						 <li style="background: #0068b7;">发布时间</li>
+						 <li style="background: #0068b7;">截止时间</li>
+						 <li style="background: #0068b7;">在线应聘</li>
+						</ul>
+						<foreach name="list" item='vo'>
+						<ul class="zplb">
+						 <li style="overflow: hidden;text-overflow: ellipsis;white-space: nowrap;">{$vo['w_name']}</li>
+						 <li style="overflow: hidden;text-overflow: ellipsis;white-space: nowrap;">{$vo['w_place']}</li>
+						 <li>{$vo['w_num']}人</li>
+						 <li>{$vo['w_start']}</li>
+						 <li>{$vo['w_end']}</li>
+						 <li><a href="/index.php/Home2/Work/details/id/{$vo['w_id']}">查看详情</a></li>
+						</ul>
+						</foreach>
+						
+				     </div>
+					<div class="page_turn">
+						<a href="/index.php/Home2/Work/index/p/<?php if($_GET['p']-1<=0){echo 1;}else{echo $_GET['p']-1;} ?>">上一页</a>
+						<a href="/index.php/Home2/Work/index/p/1">1</a>
+						<!--<a href="">2</a>
+						<a href="">3</a>
+						<a href="">4</a>-->
+						
+						<span>...</span>
+						<a href="/index.php/Home2/Work/index/p/{$page}">{$page}</a>
+						<a href="/index.php/Home2/Work/index/p/<?php if($_GET['p']+1<$page){echo $_GET['p']+1;}else{echo $page;} ?>">下一页</a>
+						<a href="/index.php/Home2/Work/index/p/{$page}">尾页</a>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		
+		
+		
+<include file="Common/foot"/>
+	</body>
+</html>
+<script type="text/javascript" src="__JS__jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="__JS__js.js"></script>

@@ -1,0 +1,431 @@
+[ 2016-03-23T20:27:18+08:00 ] ::1 /index.php/Admin4/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000699s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002596s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002851s ]
+SQL: SHOW COLUMNS FROM `ast_admin4` [ RunTime:0.0069s ]
+SQL: SELECT * FROM `ast_admin4`  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `ast_admin4` WHERE `admin_id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ast_nav4` [ RunTime:0.0086s ]
+SQL: SELECT * FROM `ast_nav4`  [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ast_admin4` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 3 for getAdminPage(), called in C:\xampp\htdocs\aiston\Application\Admin4\Controller\CommonController.class.php on line 51 and defined C:\xampp\htdocs\aiston\Application\Common\Common\function.php 第 3 行.
+NOTIC: [8] Undefined variable: num C:\xampp\htdocs\aiston\Application\Common\Common\function.php 第 4 行.
+SQL: SELECT * FROM `ast_admin4` ORDER BY admin_id LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000424s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000526s ]
+NOTIC: [8] Array to string conversion C:\xampp\htdocs\aiston\Application\Runtime\Cache\Admin4\c30b7a4bc37b808e35927ceb9682bdee.php 第 226 行.
+NOTIC: [8] Undefined variable: url C:\xampp\htdocs\aiston\Application\Runtime\Cache\Admin4\c30b7a4bc37b808e35927ceb9682bdee.php 第 455 行.
+NOTIC: [8] Undefined variable: url C:\xampp\htdocs\aiston\Application\Runtime\Cache\Admin4\c30b7a4bc37b808e35927ceb9682bdee.php 第 458 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026975s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027096s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001391s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001488s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001422s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001531s ]
+
+[ 2016-03-23T20:27:20+08:00 ] ::1 /index.php/Admin4/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000494s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000908s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001003s ]
+SQL: SHOW COLUMNS FROM `ast_admin4` [ RunTime:0.0072s ]
+SQL: SELECT * FROM `ast_admin4`  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `ast_admin4` WHERE `admin_id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `ast_nav4` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `ast_nav4`  [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ast_admin4` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 3 for getAdminPage(), called in C:\xampp\htdocs\aiston\Application\Admin4\Controller\CommonController.class.php on line 51 and defined C:\xampp\htdocs\aiston\Application\Common\Common\function.php 第 3 行.
+NOTIC: [8] Undefined variable: num C:\xampp\htdocs\aiston\Application\Common\Common\function.php 第 4 行.
+SQL: SELECT * FROM `ast_admin4` ORDER BY admin_id LIMIT 0,10   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `ast_article4` [ RunTime:0.0075s ]
+SQL: SHOW COLUMNS FROM `ast_artcate4` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `ast_artcate4` WHERE `cate_id` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ast_artcate4` WHERE `cate_id` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `ast_artcate4` WHERE `cate_pid` = 0  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ast_artcate4` WHERE `cate_pid` = 0  [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ast_article4` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `ast_article4` INNER JOIN `ast_artcate4` ON ast_article4.art_cateid = ast_artcate4.cate_id  ORDER BY art_addtime DESC LIMIT 0,10   [ RunTime:0.0067s ]
+SQL: SHOW COLUMNS FROM `ast_artcomment4` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `ast_artcomment4`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000893s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001036s ]
+NOTIC: [8] Undefined index: mentNum C:\xampp\htdocs\aiston\Application\Runtime\Cache\Admin4\dc9987697c8ebcf231407e47718e96eb.php 第 162 行.
+NOTIC: [8] Undefined index: mentNum C:\xampp\htdocs\aiston\Application\Runtime\Cache\Admin4\dc9987697c8ebcf231407e47718e96eb.php 第 162 行.
+NOTIC: [8] Undefined index: mentNum C:\xampp\htdocs\aiston\Application\Runtime\Cache\Admin4\dc9987697c8ebcf231407e47718e96eb.php 第 162 行.
+NOTIC: [8] Undefined index: mentNum C:\xampp\htdocs\aiston\Application\Runtime\Cache\Admin4\dc9987697c8ebcf231407e47718e96eb.php 第 162 行.
+NOTIC: [8] Undefined index: mentNum C:\xampp\htdocs\aiston\Application\Runtime\Cache\Admin4\dc9987697c8ebcf231407e47718e96eb.php 第 162 行.
+NOTIC: [8] Undefined index: mentNum C:\xampp\htdocs\aiston\Application\Runtime\Cache\Admin4\dc9987697c8ebcf231407e47718e96eb.php 第 162 行.
+NOTIC: [8] Undefined index: mentNum C:\xampp\htdocs\aiston\Application\Runtime\Cache\Admin4\dc9987697c8ebcf231407e47718e96eb.php 第 162 行.
+NOTIC: [8] Undefined index: mentNum C:\xampp\htdocs\aiston\Application\Runtime\Cache\Admin4\dc9987697c8ebcf231407e47718e96eb.php 第 162 行.
+NOTIC: [8] Undefined index: mentNum C:\xampp\htdocs\aiston\Application\Runtime\Cache\Admin4\dc9987697c8ebcf231407e47718e96eb.php 第 162 行.
+NOTIC: [8] Undefined index: mentNum C:\xampp\htdocs\aiston\Application\Runtime\Cache\Admin4\dc9987697c8ebcf231407e47718e96eb.php 第 162 行.
+NOTIC: [8] Array to string conversion C:\xampp\htdocs\aiston\Application\Runtime\Cache\Admin4\dc9987697c8ebcf231407e47718e96eb.php 第 382 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034667s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034766s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000629s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000679s ]
+NOTIC: [8] Undefined index: show C:\xampp\htdocs\aiston\Application\Admin4\Controller\ArticleController.class.php 第 82 行.
+NOTIC: [8] Undefined index: id C:\xampp\htdocs\aiston\Application\Admin4\Controller\ArticleController.class.php 第 83 行.
+SQL: UPDATE `ast_article4` SET `art_isshow`='1' WHERE `art_id` = null [ RunTime:0.0014s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000906s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000965s ]
+
+[ 2016-03-23T20:27:22+08:00 ] ::1 /index.php/Admin4/Article/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000517s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000865s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000944s ]
+SQL: SHOW COLUMNS FROM `ast_admin4` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `ast_admin4`  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ast_admin4` WHERE `admin_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ast_nav4` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `ast_nav4`  [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ast_admin4` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 3 for getAdminPage(), called in C:\xampp\htdocs\aiston\Application\Admin4\Controller\CommonController.class.php on line 51 and defined C:\xampp\htdocs\aiston\Application\Common\Common\function.php 第 3 行.
+NOTIC: [8] Undefined variable: num C:\xampp\htdocs\aiston\Application\Common\Common\function.php 第 4 行.
+SQL: SELECT * FROM `ast_admin4` ORDER BY admin_id LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ast_artcate4` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `ast_article4` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `ast_artcate4` WHERE `cate_pid` = 0 ORDER BY cate_id ASC  [ RunTime:0.0004s ]
+SQL: SELECT `art_order` FROM `ast_article4` ORDER BY art_order DESC LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000568s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000680s ]
+NOTIC: [8] Undefined variable: htmlData C:\xampp\htdocs\aiston\Application\Runtime\Cache\Admin4\ebe6cd25147a0ea809ce46b092445a57.php 第 144 行.
+NOTIC: [8] Undefined variable: htmlData C:\xampp\htdocs\aiston\Application\Runtime\Cache\Admin4\ebe6cd25147a0ea809ce46b092445a57.php 第 144 行.
+NOTIC: [8] Array to string conversion C:\xampp\htdocs\aiston\Application\Runtime\Cache\Admin4\ebe6cd25147a0ea809ce46b092445a57.php 第 319 行.
+NOTIC: [8] Undefined variable: url C:\xampp\htdocs\aiston\Application\Runtime\Cache\Admin4\ebe6cd25147a0ea809ce46b092445a57.php 第 548 行.
+NOTIC: [8] Undefined variable: url C:\xampp\htdocs\aiston\Application\Runtime\Cache\Admin4\ebe6cd25147a0ea809ce46b092445a57.php 第 551 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029742s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029858s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000911s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001008s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001170s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001297s ]
+
+[ 2016-03-23T20:27:24+08:00 ] ::1 /index.php/Admin4/Article/sort
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000790s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000835s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000928s ]
+SQL: SHOW COLUMNS FROM `ast_admin4` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `ast_admin4`  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `ast_admin4` WHERE `admin_id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `ast_nav4` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `ast_nav4`  [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ast_admin4` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 3 for getAdminPage(), called in C:\xampp\htdocs\aiston\Application\Admin4\Controller\CommonController.class.php on line 51 and defined C:\xampp\htdocs\aiston\Application\Common\Common\function.php 第 3 行.
+NOTIC: [8] Undefined variable: num C:\xampp\htdocs\aiston\Application\Common\Common\function.php 第 4 行.
+SQL: SELECT * FROM `ast_admin4` ORDER BY admin_id LIMIT 0,10   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `ast_artcate4` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `ast_artcate4` ORDER BY cate_order ASC  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000799s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000884s ]
+NOTIC: [8] Undefined index: sid C:\xampp\htdocs\aiston\Application\Runtime\Cache\Admin4\371cc00ca27cb200d04d7de9b9624069.php 第 136 行.
+NOTIC: [8] Undefined index: sid C:\xampp\htdocs\aiston\Application\Runtime\Cache\Admin4\371cc00ca27cb200d04d7de9b9624069.php 第 136 行.
+NOTIC: [8] Undefined index: sid C:\xampp\htdocs\aiston\Application\Runtime\Cache\Admin4\371cc00ca27cb200d04d7de9b9624069.php 第 136 行.
+NOTIC: [8] Undefined index: sid C:\xampp\htdocs\aiston\Application\Runtime\Cache\Admin4\371cc00ca27cb200d04d7de9b9624069.php 第 136 行.
+NOTIC: [8] Undefined index: sid C:\xampp\htdocs\aiston\Application\Runtime\Cache\Admin4\371cc00ca27cb200d04d7de9b9624069.php 第 136 行.
+NOTIC: [8] Array to string conversion C:\xampp\htdocs\aiston\Application\Runtime\Cache\Admin4\371cc00ca27cb200d04d7de9b9624069.php 第 499 行.
+NOTIC: [8] Undefined variable: url C:\xampp\htdocs\aiston\Application\Runtime\Cache\Admin4\371cc00ca27cb200d04d7de9b9624069.php 第 728 行.
+NOTIC: [8] Undefined variable: url C:\xampp\htdocs\aiston\Application\Runtime\Cache\Admin4\371cc00ca27cb200d04d7de9b9624069.php 第 731 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030222s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030301s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000495s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000630s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002332s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002627s ]
+
+[ 2016-03-23T20:27:27+08:00 ] ::1 /index.php/Admin4/Product/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000496s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000758s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000821s ]
+SQL: SHOW COLUMNS FROM `ast_admin4` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `ast_admin4`  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ast_admin4` WHERE `admin_id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ast_nav4` [ RunTime:0.0077s ]
+SQL: SELECT * FROM `ast_nav4`  [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ast_admin4` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 3 for getAdminPage(), called in C:\xampp\htdocs\aiston\Application\Admin4\Controller\CommonController.class.php on line 51 and defined C:\xampp\htdocs\aiston\Application\Common\Common\function.php 第 3 行.
+NOTIC: [8] Undefined variable: num C:\xampp\htdocs\aiston\Application\Common\Common\function.php 第 4 行.
+SQL: SELECT * FROM `ast_admin4` ORDER BY admin_id LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ast_product4` [ RunTime:0.0073s ]
+SQL: SHOW COLUMNS FROM `ast_procate4` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `ast_procate4` WHERE `cate_id` = 0 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ast_procate4` WHERE `cate_id` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `ast_procate4` WHERE `cate_pid` = 0  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ast_procate4` WHERE `cate_pid` = 0  [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ast_product4` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `ast_product4` INNER JOIN `ast_procate4` ON ast_product4.pro_cate_id = ast_procate4.cate_id  ORDER BY pro_addtime DESC LIMIT 0,10   [ RunTime:0.0054s ]
+SQL: SHOW COLUMNS FROM `ast_procomment3` [ RunTime:0.0109s ]
+SQL: SELECT * FROM `ast_procomment3`  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000517s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000620s ]
+NOTIC: [8] Undefined index: mentNum C:\xampp\htdocs\aiston\Application\Runtime\Cache\Admin4\807741c1aad0001c869686fd8b99a1ea.php 第 159 行.
+NOTIC: [8] Undefined index: mentNum C:\xampp\htdocs\aiston\Application\Runtime\Cache\Admin4\807741c1aad0001c869686fd8b99a1ea.php 第 159 行.
+NOTIC: [8] Undefined index: mentNum C:\xampp\htdocs\aiston\Application\Runtime\Cache\Admin4\807741c1aad0001c869686fd8b99a1ea.php 第 159 行.
+NOTIC: [8] Undefined index: mentNum C:\xampp\htdocs\aiston\Application\Runtime\Cache\Admin4\807741c1aad0001c869686fd8b99a1ea.php 第 159 行.
+NOTIC: [8] Undefined index: mentNum C:\xampp\htdocs\aiston\Application\Runtime\Cache\Admin4\807741c1aad0001c869686fd8b99a1ea.php 第 159 行.
+NOTIC: [8] Undefined index: mentNum C:\xampp\htdocs\aiston\Application\Runtime\Cache\Admin4\807741c1aad0001c869686fd8b99a1ea.php 第 159 行.
+NOTIC: [8] Undefined index: mentNum C:\xampp\htdocs\aiston\Application\Runtime\Cache\Admin4\807741c1aad0001c869686fd8b99a1ea.php 第 159 行.
+NOTIC: [8] Undefined index: mentNum C:\xampp\htdocs\aiston\Application\Runtime\Cache\Admin4\807741c1aad0001c869686fd8b99a1ea.php 第 159 行.
+NOTIC: [8] Array to string conversion C:\xampp\htdocs\aiston\Application\Runtime\Cache\Admin4\807741c1aad0001c869686fd8b99a1ea.php 第 382 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030907s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031018s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000579s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000641s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001307s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001430s ]
+
+[ 2016-03-23T20:27:29+08:00 ] ::1 /index.php/Admin4/Product/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000685s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000957s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001057s ]
+SQL: SHOW COLUMNS FROM `ast_admin4` [ RunTime:0.0061s ]
+SQL: SELECT * FROM `ast_admin4`  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ast_admin4` WHERE `admin_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ast_nav4` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `ast_nav4`  [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ast_admin4` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 3 for getAdminPage(), called in C:\xampp\htdocs\aiston\Application\Admin4\Controller\CommonController.class.php on line 51 and defined C:\xampp\htdocs\aiston\Application\Common\Common\function.php 第 3 行.
+NOTIC: [8] Undefined variable: num C:\xampp\htdocs\aiston\Application\Common\Common\function.php 第 4 行.
+SQL: SELECT * FROM `ast_admin4` ORDER BY admin_id LIMIT 0,10   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `ast_procate4` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `ast_product4` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `ast_procate4` WHERE `cate_pid` = 0 ORDER BY cate_id ASC  [ RunTime:0.0005s ]
+SQL: SELECT `pro_order` FROM `ast_product4` ORDER BY pro_order DESC LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000768s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000890s ]
+NOTIC: [8] Undefined variable: htmlData C:\xampp\htdocs\aiston\Application\Runtime\Cache\Admin4\152b68d62234b0be307c9508405ba492.php 第 173 行.
+NOTIC: [8] Undefined variable: htmlData C:\xampp\htdocs\aiston\Application\Runtime\Cache\Admin4\152b68d62234b0be307c9508405ba492.php 第 174 行.
+NOTIC: [8] Array to string conversion C:\xampp\htdocs\aiston\Application\Runtime\Cache\Admin4\152b68d62234b0be307c9508405ba492.php 第 378 行.
+NOTIC: [8] Undefined variable: url C:\xampp\htdocs\aiston\Application\Runtime\Cache\Admin4\152b68d62234b0be307c9508405ba492.php 第 607 行.
+NOTIC: [8] Undefined variable: url C:\xampp\htdocs\aiston\Application\Runtime\Cache\Admin4\152b68d62234b0be307c9508405ba492.php 第 610 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028290s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028387s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000566s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000631s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001730s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001859s ]
+
+[ 2016-03-23T20:52:26+08:00 ] ::1 /index.php/Admin4/Invest/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000918s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002116s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002214s ]
+SQL: SHOW COLUMNS FROM `ast_admin4` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `ast_admin4`  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `ast_admin4` WHERE `admin_id` = 1 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `ast_nav4` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `ast_nav4`  [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ast_admin4` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 3 for getAdminPage(), called in C:\xampp\htdocs\aiston\Application\Admin4\Controller\CommonController.class.php on line 51 and defined C:\xampp\htdocs\aiston\Application\Common\Common\function.php 第 3 行.
+NOTIC: [8] Undefined variable: num C:\xampp\htdocs\aiston\Application\Common\Common\function.php 第 4 行.
+SQL: SELECT * FROM `ast_admin4` ORDER BY admin_id LIMIT 0,10   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `ast_invest4` [ RunTime:0.0056s ]
+SQL: SELECT * FROM `ast_invest4`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000501s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000571s ]
+NOTIC: [8] Undefined variable: cid C:\xampp\htdocs\aiston\Application\Runtime\Cache\Admin4\e9949edbe2a654765f506f6c4f01ec88.php 第 121 行.
+NOTIC: [8] Undefined variable: acate C:\xampp\htdocs\aiston\Application\Runtime\Cache\Admin4\e9949edbe2a654765f506f6c4f01ec88.php 第 124 行.
+NOTIC: [8] Undefined variable: cid C:\xampp\htdocs\aiston\Application\Runtime\Cache\Admin4\e9949edbe2a654765f506f6c4f01ec88.php 第 128 行.
+NOTIC: [8] Undefined index: art_isshow C:\xampp\htdocs\aiston\Application\Runtime\Cache\Admin4\e9949edbe2a654765f506f6c4f01ec88.php 第 149 行.
+NOTIC: [8] Undefined index: art_order C:\xampp\htdocs\aiston\Application\Runtime\Cache\Admin4\e9949edbe2a654765f506f6c4f01ec88.php 第 153 行.
+NOTIC: [8] Undefined index: art_id C:\xampp\htdocs\aiston\Application\Runtime\Cache\Admin4\e9949edbe2a654765f506f6c4f01ec88.php 第 153 行.
+NOTIC: [8] Undefined index: art_isshow C:\xampp\htdocs\aiston\Application\Runtime\Cache\Admin4\e9949edbe2a654765f506f6c4f01ec88.php 第 149 行.
+NOTIC: [8] Undefined index: art_order C:\xampp\htdocs\aiston\Application\Runtime\Cache\Admin4\e9949edbe2a654765f506f6c4f01ec88.php 第 153 行.
+NOTIC: [8] Undefined index: art_id C:\xampp\htdocs\aiston\Application\Runtime\Cache\Admin4\e9949edbe2a654765f506f6c4f01ec88.php 第 153 行.
+NOTIC: [8] Undefined index: art_isshow C:\xampp\htdocs\aiston\Application\Runtime\Cache\Admin4\e9949edbe2a654765f506f6c4f01ec88.php 第 149 行.
+NOTIC: [8] Undefined index: art_order C:\xampp\htdocs\aiston\Application\Runtime\Cache\Admin4\e9949edbe2a654765f506f6c4f01ec88.php 第 153 行.
+NOTIC: [8] Undefined index: art_id C:\xampp\htdocs\aiston\Application\Runtime\Cache\Admin4\e9949edbe2a654765f506f6c4f01ec88.php 第 153 行.
+NOTIC: [8] Undefined index: art_isshow C:\xampp\htdocs\aiston\Application\Runtime\Cache\Admin4\e9949edbe2a654765f506f6c4f01ec88.php 第 149 行.
+NOTIC: [8] Undefined index: art_order C:\xampp\htdocs\aiston\Application\Runtime\Cache\Admin4\e9949edbe2a654765f506f6c4f01ec88.php 第 153 行.
+NOTIC: [8] Undefined index: art_id C:\xampp\htdocs\aiston\Application\Runtime\Cache\Admin4\e9949edbe2a654765f506f6c4f01ec88.php 第 153 行.
+NOTIC: [8] Undefined index: art_isshow C:\xampp\htdocs\aiston\Application\Runtime\Cache\Admin4\e9949edbe2a654765f506f6c4f01ec88.php 第 149 行.
+NOTIC: [8] Undefined index: art_order C:\xampp\htdocs\aiston\Application\Runtime\Cache\Admin4\e9949edbe2a654765f506f6c4f01ec88.php 第 153 行.
+NOTIC: [8] Undefined index: art_id C:\xampp\htdocs\aiston\Application\Runtime\Cache\Admin4\e9949edbe2a654765f506f6c4f01ec88.php 第 153 行.
+NOTIC: [8] Undefined index: art_isshow C:\xampp\htdocs\aiston\Application\Runtime\Cache\Admin4\e9949edbe2a654765f506f6c4f01ec88.php 第 149 行.
+NOTIC: [8] Undefined index: art_order C:\xampp\htdocs\aiston\Application\Runtime\Cache\Admin4\e9949edbe2a654765f506f6c4f01ec88.php 第 153 行.
+NOTIC: [8] Undefined index: art_id C:\xampp\htdocs\aiston\Application\Runtime\Cache\Admin4\e9949edbe2a654765f506f6c4f01ec88.php 第 153 行.
+NOTIC: [8] Undefined index: art_isshow C:\xampp\htdocs\aiston\Application\Runtime\Cache\Admin4\e9949edbe2a654765f506f6c4f01ec88.php 第 149 行.
+NOTIC: [8] Undefined index: art_order C:\xampp\htdocs\aiston\Application\Runtime\Cache\Admin4\e9949edbe2a654765f506f6c4f01ec88.php 第 153 行.
+NOTIC: [8] Undefined index: art_id C:\xampp\htdocs\aiston\Application\Runtime\Cache\Admin4\e9949edbe2a654765f506f6c4f01ec88.php 第 153 行.
+NOTIC: [8] Undefined index: art_isshow C:\xampp\htdocs\aiston\Application\Runtime\Cache\Admin4\e9949edbe2a654765f506f6c4f01ec88.php 第 149 行.
+NOTIC: [8] Undefined index: art_order C:\xampp\htdocs\aiston\Application\Runtime\Cache\Admin4\e9949edbe2a654765f506f6c4f01ec88.php 第 153 行.
+NOTIC: [8] Undefined index: art_id C:\xampp\htdocs\aiston\Application\Runtime\Cache\Admin4\e9949edbe2a654765f506f6c4f01ec88.php 第 153 行.
+NOTIC: [8] Undefined variable: show C:\xampp\htdocs\aiston\Application\Runtime\Cache\Admin4\e9949edbe2a654765f506f6c4f01ec88.php 第 160 行.
+NOTIC: [8] Array to string conversion C:\xampp\htdocs\aiston\Application\Runtime\Cache\Admin4\e9949edbe2a654765f506f6c4f01ec88.php 第 371 行.
+NOTIC: [8] Undefined variable: url C:\xampp\htdocs\aiston\Application\Runtime\Cache\Admin4\e9949edbe2a654765f506f6c4f01ec88.php 第 600 行.
+NOTIC: [8] Undefined variable: url C:\xampp\htdocs\aiston\Application\Runtime\Cache\Admin4\e9949edbe2a654765f506f6c4f01ec88.php 第 603 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030221s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030298s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001254s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001315s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001959s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002063s ]
+
+[ 2016-03-23T20:52:29+08:00 ] ::1 /index.php/Admin4/Photo/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000954s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001305s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001385s ]
+SQL: SHOW COLUMNS FROM `ast_admin4` [ RunTime:0.0057s ]
+SQL: SELECT * FROM `ast_admin4`  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `ast_admin4` WHERE `admin_id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ast_nav4` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `ast_nav4`  [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ast_admin4` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 3 for getAdminPage(), called in C:\xampp\htdocs\aiston\Application\Admin4\Controller\CommonController.class.php on line 51 and defined C:\xampp\htdocs\aiston\Application\Common\Common\function.php 第 3 行.
+NOTIC: [8] Undefined variable: num C:\xampp\htdocs\aiston\Application\Common\Common\function.php 第 4 行.
+SQL: SELECT * FROM `ast_admin4` ORDER BY admin_id LIMIT 0,10   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `ast_banner4` [ RunTime:0.0039s ]
+SQL: SHOW COLUMNS FROM `ast_banner_page4` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `ast_banner_page4`  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ast_banner4`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000906s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001034s ]
+NOTIC: [8] Undefined variable: banner_page C:\xampp\htdocs\aiston\Application\Runtime\Cache\Admin4\2fb78c6d775512fde82c455929496d4a.php 第 125 行.
+NOTIC: [8] Array to string conversion C:\xampp\htdocs\aiston\Application\Runtime\Cache\Admin4\2fb78c6d775512fde82c455929496d4a.php 第 299 行.
+NOTIC: [8] Undefined variable: url C:\xampp\htdocs\aiston\Application\Runtime\Cache\Admin4\2fb78c6d775512fde82c455929496d4a.php 第 528 行.
+NOTIC: [8] Undefined variable: url C:\xampp\htdocs\aiston\Application\Runtime\Cache\Admin4\2fb78c6d775512fde82c455929496d4a.php 第 531 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029767s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029831s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001074s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001128s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001885s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001977s ]
+
+[ 2016-03-23T20:58:32+08:00 ] ::1 /index.php/Admin4/User/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000658s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001828s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001921s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001551s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001637s ]
+
+[ 2016-03-23T20:58:33+08:00 ] ::1 /index.php/Admin4/User/logout.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001195s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001907s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002018s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002094s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002181s ]
+
+[ 2016-03-23T20:58:33+08:00 ] ::1 /index.php/Admin4/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000566s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001153s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001228s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000152s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014972s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015035s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000842s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000891s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001124s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001179s ]
+
+[ 2016-03-23T20:58:33+08:00 ] ::1 /index.php/Admin4/User/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000832s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001157s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001234s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001323s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001404s ]
+
+[ 2016-03-23T21:10:34+08:00 ] ::1 /index.php/Admin4/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001106s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002423s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002597s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000490s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000590s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011946s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012037s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000904s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000955s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001093s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001147s ]
+
+[ 2016-03-23T21:10:35+08:00 ] ::1 /index.php/Admin4/User/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001394s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002095s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002204s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002338s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002733s ]
+

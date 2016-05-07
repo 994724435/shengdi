@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="页面描述"/>
+		<meta name="keywords" content="关键字,关键字"/>
+		<meta name="robots" content="index,follow"/>
+		<meta name="renderer" content="webkit">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="__CSS__global.css"/>
+		<link rel="stylesheet" type="text/css" href="__CSS__news.detail.css"/>
+	</head>
+	<body>
+		 <include file="Common/header"/>
+		<div class="center-block">
+			<div class="location">当前位置：<a href="">首页</a>&nbsp;&gt;&gt;&nbsp;<span>招商投资</span></div>
+			<div class="main_section cl">
+				<div class="left fl">
+					<ul class="menu">
+						<li class="tit">导航</li>
+						<li class="li"><a href="/index.php/Homeen2/Invest/index/de/投资项目">投资项目</a></li>
+						<li class="li"><a href="/index.php/Homeen2/Invest/index/de/优惠政策">优惠政策</a></li>
+						<li class="li"><a href="/index.php/Homeen2/Invest/detail/id/2">投资优势</a></li>
+						<li class="li"><a href="/index.php/Homeen2/Invest/detail/id/1">服务流程</a></li>
+						<li class="li"><a href="/index.php/Homeen2/Invest/contact">客服热线</a></li>
+						<li class="li"><a href="/index.php/Homeen2/Invest/suggest">意见建议</a></li>
+					</ul>
+					<p>广告位</p>
+					<a href=""><img class="adapt" src="{$link['link_url']}" width="220px" /></a>
+				</div>
+				<div class="right fr">
+					<div class="title cl">
+						<span class="fl">内容详情</span>
+						<!--<a href="" class="fr">MORE&gt;&gt;</a>-->
+					</div>
+					<div class="detail">
+						<p class="detail_title">{$result['i_title']}</p>
+						<p class="other">作者：{$result['i_place']}  日期：{$result['i_time']}</p>
+
+						<p class="p">
+							<img src="{$result['i_thumb']}" style="width: 300px;margin: 0 auto;display: <?php if($result['i_thumb']){echo 'block';}else{echo 'none';} ?>;"/>
+						 <br />
+						 <?php $str  =stripslashes($result['i_content']);
+							       echo htmlspecialchars_decode($str); ?>
+						</p>
+						</div>
+					<a href="/index.php/Homeen2/Invest/detail/id/{$result1['i_id']}" class="prev">上一篇：<?php if($result1['i_title']){echo $result1['i_title'];}else{echo "没有了";} ?>...</a>
+					<a href="/index.php/Homeen2/Invest/detail/id/{$result2['i_id']}" class="next">下一篇：<?php if($result2['i_title']){echo $result2['i_title'];}else{echo "没有了";} ?></a>
+				</div>
+			</div>
+		</div>
+		<include file="Common/foot"/>
+	</body>
+</html>
+<script type="text/javascript" src="__JS__jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="__JS__js.js"></script>

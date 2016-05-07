@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+.main_section .right .biglogo{
+	margin: 95px auto;
+}
+.main_section .right .caption{
+	text-align: center;
+	font-size: 20px;
+	font-family: "微软雅黑";
+	color: #4a4a4a;
+	margin-bottom: 45px;
+}
+.main_section .right .caption ~ p{
+	color: #999;
+	line-height: 28px;
+	font-family: "微软雅黑";
+	padding: 0 60px;
+}

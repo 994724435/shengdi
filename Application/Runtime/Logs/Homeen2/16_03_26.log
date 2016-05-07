@@ -1,0 +1,26 @@
+[ 2016-03-26T10:09:48+08:00 ] ::1 /index.php/Homeen2/Contact/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000692s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001286s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001363s ]
+SQL: SHOW COLUMNS FROM `ast_banneren2` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `ast_banneren2`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `ast_linken2` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `ast_linken2`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ast_companyen2` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `ast_companyen2` WHERE `c_id` = 2  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000127s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000229s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016162s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016455s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001942s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002055s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001331s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001408s ]
+

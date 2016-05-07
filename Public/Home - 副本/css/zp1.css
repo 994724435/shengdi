@@ -1,0 +1,30 @@
+.lzx .zpdh{
+   width:755px;
+   height:50px;
+   margin:30px 0 10px 0;
+}
+.lzx .lbl{
+	margin-bottom:25px;
+	height:262px;
+}
+.lzx .zpdh li,
+.lzx .zplb li{
+	width:125.8px;
+	height:50px;
+	line-height:50px;
+	float:left;
+	text-align:center;
+	background:#19af89;
+	color:#fff;
+	font-size:16px;
+}
+.lzx .zplb li{
+	height:35px;
+	line-height:35px;
+	background:#fff;
+	font-size:14px;
+	color:#4c4c4c;
+}
+.lzx .zplb li a{
+	color:#5dc4e8;
+}

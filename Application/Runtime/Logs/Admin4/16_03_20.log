@@ -1,0 +1,15 @@
+[ 2016-03-20T21:25:01+08:00 ] ::1 /index.php/Admin4/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001470s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001482s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001608s ]
+SQL: SHOW COLUMNS FROM `ast_admin4` [ RunTime:0.0089s ]
+SQL: SELECT * FROM `ast_admin4`  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `ast_admin4` WHERE `admin_id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+ERR: 1146:Table 'di.ast_nav4' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ast_nav4`
+ERR: 1146:Table 'di.ast_nav4' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `ast_nav4`
+

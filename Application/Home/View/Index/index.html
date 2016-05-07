@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="页面描述"/>
+    <meta name="keywords" content="关键字,关键字"/>
+    <meta name="robots" content="index,follow"/>
+    <meta name="renderer" content="webkit">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="__CSS__global.css"/>
+    <link rel="stylesheet" type="text/css" href="__CSS__index.css"/>
+  
+  <!-- video.js-->
+  <link href="__CSS__video-js.css" rel="stylesheet" type="text/css">
+  <script src="__JS__video.js"></script>
+  <!-- Unless using the CDN hosted version, update the URL to the Flash SWF -->
+  <script>
+    videojs.options.flash.swf = "__JS__video-js.swf";
+  </script>    
+  </head>
+  <body>
+    
+	   <include file="Common/header" />
+    
+    <div class="center-block">
+      <div class="main">
+        <div class="row1 cl">
+          <div class="left fl">
+            <div class="title cl">
+              <div class="fl">企业简介</div>
+              <a href="/index.php/Home/Walkto/index" class="fr">MORE&gt;&gt;</a>
+            </div>
+            <div class="section">
+              <div class="thumbnail cl">
+                <div class="fl"><img class="adapt" src="{$intro['c_thumb']}" width="95px" height="68px"/></div>
+                <div class="fl"><img class="adapt" src="{$intro['c_thumb1']}" width="95px" height="68px"/></div>
+                <div class="fl"><img class="adapt" src="{$intro['c_thumb2']}" width="95px" height="68px"/></div>
+              </div>
+              <p>
+            <?php 
+            $str  =stripslashes($intro['c_content']);
+            echo htmlspecialchars_decode($str); 
+            ?>
+              </p>
+            </div>
+          </div>
+          <div class="center fl">
+            <div class="title cl">
+              <div class="fl">新闻中心</div>
+              <a href="/index.php/Home/News/index" class="fr">MORE&gt;&gt;</a>
+            </div>
+            <div class="section">
+              <div class="div1 cl">
+                <div class="l fl"><img class="adapt" src="{$list[0]['art_thumb']}"/></div>
+                <div class="r fl">
+                  <a href="/index.php/Home/News/details/aid/{$list[0]['art_id']}" class="t">{$list[0]['art_title']}</a>
+                  <p class="d">{$list[0]['art_addtime']|date="Y-m-d",###}</p>
+                  <!--<p class="c" style="overflow: hidden;text-overflow: ellipsis;white-space: nowrap;">{$list[0]['art_title']}</p>-->
+                </div>
+              </div>
+              
+              
+              <ul>
+              	<foreach name="list" item="val">
+                <li class="cl">
+                  <a href="/index.php/Home/News/details/aid/{$val['art_id']}" class="fl" style="overflow: hidden;text-overflow: ellipsis;white-space: nowrap;">{$val['art_title']}</a>
+                  <span class="fr">{$val['art_addtime']|date="Y-m-d",###}</span>
+                </li>
+                </foreach>
+              </ul>
+              <div class="page_turn">
+                <a href="/index.php/Home/Index/index/p/<?php if($_GET['p']-1<=0){echo 1;}else{echo $_GET['p']-1;} ?>">上一页</a>
+                <a href="/index.php/Home/Index/index/p/1">1</a>
+               
+              ...
+                <a href="/index.php/Home/Index/index/p/{$page}">{$page}</a>
+                <a href="/index.php/Home/Index/index/p/<?php if($_GET['p']+1<$page){echo $_GET['p']+1;}else{echo $page;} ?>">下一页</a>
+                <a href="/index.php/Home/Index/index/p/{$page}">尾页</a>
+              </div>
+            </div>
+          </div>
+          <div class="right fl"><a href="/index.php/Home/Work/index">了解详情</a></div>
+        </div>
+        <div class="row2 cl">
+          <div class="left fl">
+            <div class="title cl">
+              <div class="fl">视频中心</div>
+              <!--<a href="" class="fr">MORE&gt;&gt;</a>-->
+            </div>     
+            	  <video id="example_video_1" class="video-js vjs-default-skin" controls preload="none" width="317" height="180"
+      poster="http://video-js.zencoder.com/oceans-clip.png"
+      data-setup="{}">
+    <source src="/demo.mp4" type='video/mp4' />
+    <source src="http://video-js.zencoder.com/oceans-clip.webm" type='video/webm' />
+    <source src="http://video-js.zencoder.com/oceans-clip.ogv" type='video/ogg' />
+    <track kind="captions" src="demo.captions.vtt" srclang="en" label="English"></track><!-- Tracks need an ending tag thanks to IE9 -->
+    <track kind="subtitles" src="demo.captions.vtt" srclang="en" label="English"></track><!-- Tracks need an ending tag thanks to IE9 -->
+  </video>
+          <!--    <div class="desc">视频播放区</div>-->
+          
+          </div>
+          <div class="right fl">
+            <div class="title cl">
+              <div class="fl">产品展示</div>
+              <a href="/index.php/Home/Product/index" class="fr">MORE&gt;&gt;</a>
+            </div>
+            <div class="product cl">
+            	<foreach name="pres" item="pres">
+              <a href="/index.php/Home/Product/details/id/{$pres['cate_id']}" class="fl">
+                <div class="pic">
+                  <img class="adapt" src="__IMAGES__5.jpg"/>                 
+                </div>
+                <p>{$pres['cate_name']}</p>
+              </a></foreach>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <include file="Common/foot"/>
+  </body>
+</html>
+<script type="text/javascript" src="__JS__jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="__JS__js.js"></script>

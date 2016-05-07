@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="页面描述"/>
+		<meta name="keywords" content="关键字,关键字"/>
+		<meta name="robots" content="index,follow"/>
+		<meta name="renderer" content="webkit">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="__CSS__global.css"/>
+		<link rel="stylesheet" type="text/css" href="__CSS__news.detail.css"/>
+	</head>
+	<body>
+		 <include file="Common/header"/>
+		<div class="center-block">
+			<div class="location">Current location：<a href="/index.php/Homen/Index">Home</a>&nbsp;&gt;&gt;&nbsp;<span>Investment</span></div>
+			<div class="main_section cl">
+				<div class="left fl">
+					<ul class="menu">
+						<li class="tit">Navigation</li>
+						<li class="li"><a href="/index.php/Homen/Invest/suggest">Suggest</a></li>
+						<li class="li"><a href="/index.php/Homen/Invest/detail/id/1">Service flow</a></li>
+						<li class="li"><a href="/index.php/Homen/Invest/index/de/优惠政策">Favoured policy</a></li>
+						<li class="li"><a href="/index.php/Homen/Invest/index/de/投资项目">Investment projects</a></li>
+						<li class="li"><a href="/index.php/Homen/Invest/detail/id/2">Investment advantage</a></li>
+						<li class="li"><a href="/index.php/Homen/Invest/contact">customer service hotline</a></li>
+						
+					</ul>
+					<p>Advertising position</p>
+					<a href=""><img class="adapt" src="{$link['link_url']}" width="220px" /></a>
+				</div>
+				<div class="right fr">
+					<div class="title cl">
+						<span class="fl">Content Detail</span>
+						<!--<a href="" class="fr">MORE&gt;&gt;</a>-->
+					</div>
+					<div class="detail">
+						<p class="detail_title">{$result['i_title']}</p>
+						<p class="other">Author：{$result['i_place']}  Date：{$result['i_time']}</p>
+
+						<p class="p">
+							<img src="{$result['i_thumb']}" style="width: 300px;margin: 0 auto;display: <?php if($result['i_thumb']){echo 'block';}else{echo 'none';} ?>;"/>
+						 <br />
+						 <?php $str  =stripslashes($result['i_content']);
+							       echo htmlspecialchars_decode($str); ?>
+						</p>
+						</div>
+					<a href="/index.php/Home/Invest/detail/id/{$result1['i_id']}" class="prev">Pre：<?php if($result1['i_title']){echo $result1['i_title'];}else{echo "没有了";} ?>...</a>
+					<a href="/index.php/Home/Invest/detail/id/{$result2['i_id']}" class="next">Next：<?php if($result2['i_title']){echo $result2['i_title'];}else{echo "没有了";} ?></a>
+				</div>
+			</div>
+		</div>
+		<include file="Common/foot"/>
+	</body>
+</html>
+<script type="text/javascript" src="__JS__jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="__JS__js.js"></script>

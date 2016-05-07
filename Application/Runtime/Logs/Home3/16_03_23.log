@@ -1,0 +1,105 @@
+[ 2016-03-23T20:57:11+08:00 ] ::1 /index.php/Home3/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001091s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001179s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001269s ]
+SQL: SHOW COLUMNS FROM `ast_banner3` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `ast_banner3`  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `ast_link3` [ RunTime:0.0061s ]
+SQL: SELECT * FROM `ast_link3`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `ast_company3` [ RunTime:0.0041s ]
+SQL: SHOW COLUMNS FROM `ast_article3` [ RunTime:0.0047s ]
+SQL: SHOW COLUMNS FROM `ast_product3` [ RunTime:0.0052s ]
+SQL: SHOW COLUMNS FROM `ast_procate3` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `ast_procate3`  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ast_article3` WHERE `art_cateid` = 4 LIMIT 5   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `ast_article3` WHERE `art_cateid` = 5 LIMIT 3   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ast_article3` ORDER BY art_addtime desc LIMIT 2,3   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `ast_article3` ORDER BY art_addtime desc LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ast_product3`  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `ast_company3`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000129s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000209s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022609s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022724s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001344s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001427s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002210s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002307s ]
+
+[ 2016-03-23T20:57:16+08:00 ] ::1 /index.php/Home3/Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000581s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001086s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001150s ]
+SQL: SHOW COLUMNS FROM `ast_banner3` [ RunTime:0.0057s ]
+SQL: SELECT * FROM `ast_banner3`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `ast_link3` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `ast_link3`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ast_company3` [ RunTime:0.0039s ]
+SQL: SHOW COLUMNS FROM `ast_article3` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `ast_product3` [ RunTime:0.0045s ]
+SQL: SHOW COLUMNS FROM `ast_procate3` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `ast_procate3`  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ast_article3` WHERE `art_cateid` = 4 LIMIT 5   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ast_article3` WHERE `art_cateid` = 5 LIMIT 3   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ast_article3` ORDER BY art_addtime desc LIMIT 2,3   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `ast_article3` ORDER BY art_addtime desc LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ast_product3`  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ast_company3`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000249s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000414s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020844s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020929s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001075s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001138s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001671s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001747s ]
+
+[ 2016-03-23T21:09:41+08:00 ] ::1 /index.php/Home3/Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000793s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001409s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001530s ]
+SQL: SHOW COLUMNS FROM `ast_banner3` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `ast_banner3`  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `ast_link3` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `ast_link3`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ast_company3` [ RunTime:0.0043s ]
+SQL: SHOW COLUMNS FROM `ast_article3` [ RunTime:0.0047s ]
+SQL: SHOW COLUMNS FROM `ast_product3` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `ast_procate3` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `ast_procate3`  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `ast_article3` WHERE `art_cateid` = 4 LIMIT 5   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `ast_article3` WHERE `art_cateid` = 5 LIMIT 3   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `ast_article3` ORDER BY art_addtime desc LIMIT 2,3   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `ast_article3` ORDER BY art_addtime desc LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `ast_product3`  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `ast_company3`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000142s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000212s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020085s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020155s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000885s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000938s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002024s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002113s ]
+

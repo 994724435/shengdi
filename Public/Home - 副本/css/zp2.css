@@ -1,0 +1,40 @@
+.lzx .zpdh{
+   width:755px;
+   height:50px;
+   margin:30px 0 10px 0;
+}
+.lzx .lbl{
+	margin-bottom:10px;
+	height:50px;
+}
+.lzx .zpdh li{
+	width:725px;
+	height:50px;
+	line-height:50px;
+	float:left;
+	text-align:left;
+	background:#19af89;
+	color:#fff;
+	font-size:17px;
+	padding-left:30px;
+}
+.lzx .zwjs .qm,
+.lzx .zwjs .qw{
+	width:725px;
+	height:25px;
+	line-height:25px;
+	padding-left:30px;
+}
+.lzx .zwjs .qm span{
+	font-size:12px;
+	display:block;
+	width:150px;
+	height:25px;
+	float:left;
+	line-height:25px;
+	color:#4c4c4c;
+}
+.lzx .zwjs .qw{
+	font-size:12px;
+	color:#4c4c4c;
+}
